@@ -1,0 +1,97 @@
+{
+  // See https://go.microsoft.com/fwlink/?linkid=830387
+  // for the documentation about the launch.json format
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Debug All Modules",
+      "configurations": [
+        "Debug Memoria",
+        "Debug CPU",
+        "Debug Kernel"
+      ]
+    }
+  ],
+  "configurations": [
+    {
+      "name": "run",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/${workspaceFolderBasename}",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "build"
+    },
+    {
+      "name": "Debug Memoria",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/memoria/bin/memoria",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/memoria",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "Debug Memoria"
+    },
+    {
+      "name": "Debug CPU",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/cpu/bin/cpu",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/cpu",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "Debug CPU"
+    },
+    {
+      "name": "Debug Kernel",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/kernel/bin/kernel",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/kernel",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "Debug Kernel"
+    }
+  ]
+}

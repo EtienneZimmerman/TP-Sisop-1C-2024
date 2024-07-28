@@ -1,0 +1,37 @@
+[INFO] 03:23:50:283 kernel/(42129:42132): recibi PID: 1
+[INFO] 03:23:50:284 kernel/(42129:43052): El pcb entro en la cola de NEW
+[INFO] 03:23:50:284 kernel/(42129:43052): Proceso creado con PID: 1
+[INFO] 03:23:51:283 kernel/(42129:42135): Logueando PCBs en NEW
+[INFO] 03:23:51:284 kernel/(42129:42135): PID: 1, PC: 0, QUANTUM: 0
+[INFO] 03:23:51:284 kernel/(42129:42135): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 03:23:51:284 kernel/(42129:42135): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 03:23:51:284 kernel/(42129:42135): SI: 0, DI: 0, PC: 0
+[INFO] 03:23:51:284 kernel/(42129:42135): Logueando PCBs en READY
+[INFO] 03:23:51:284 kernel/(42129:42135): Logueando PCB en EXEC
+[INFO] 03:23:51:284 kernel/(42129:42135): No hay procesos en exec
+[INFO] 03:23:51:284 kernel/(42129:42135): Logueando PCBs en BLOCKED
+[INFO] 03:23:51:284 kernel/(42129:42135): Logueando PCBs en EXIT
+[INFO] 03:23:53:292 kernel/(42129:42135): Logueando PCBs en NEW
+[INFO] 03:23:53:293 kernel/(42129:42135): PID: 1, PC: 0, QUANTUM: 0
+[INFO] 03:23:53:293 kernel/(42129:42135): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 03:23:53:293 kernel/(42129:42135): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 03:23:53:293 kernel/(42129:42135): SI: 0, DI: 0, PC: 0
+[INFO] 03:23:53:293 kernel/(42129:42135): Logueando PCBs en READY
+[INFO] 03:23:53:293 kernel/(42129:42135): Logueando PCB en EXEC
+[INFO] 03:23:53:293 kernel/(42129:42135): No hay procesos en exec
+[INFO] 03:23:53:293 kernel/(42129:42135): Logueando PCBs en BLOCKED
+[INFO] 03:23:53:293 kernel/(42129:42135): Logueando PCBs en EXIT
+[INFO] 03:23:54:295 kernel/(42129:43053): El pcb entro en la cola de READY
+[INFO] 03:23:54:295 kernel/(42129:42134): Entre por FIFO
+[INFO] 03:23:54:295 kernel/(42129:42134): El pcb entro en la cola de RUNNING
+[INFO] 03:23:54:295 kernel/(42129:42134): El proceso 1 cambio su estado a RUNNING
+[INFO] 03:23:54:295 kernel/(42129:42134): PID: 1 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 03:23:55:296 kernel/(42129:42135): Logueando PCBs en NEW
+[INFO] 03:23:55:296 kernel/(42129:42135): Logueando PCBs en READY
+[INFO] 03:23:55:296 kernel/(42129:42135): Logueando PCB en EXEC
+[INFO] 03:23:55:296 kernel/(42129:42135): PID: 1, PC: 0, QUANTUM: 0
+[INFO] 03:23:55:296 kernel/(42129:42135): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 03:23:55:296 kernel/(42129:42135): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 03:23:55:296 kernel/(42129:42135): SI: 0, DI: 0, PC: 0
+[INFO] 03:23:55:296 kernel/(42129:42135): Logueando PCBs en BLOCKED
+[INFO] 03:23:55:296 kernel/(42129:42135): Logueando PCBs en EXIT

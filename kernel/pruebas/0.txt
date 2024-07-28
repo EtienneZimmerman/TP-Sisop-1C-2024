@@ -1,0 +1,6 @@
+INICIAR_PROCESO /pruebas/dfs.txt
+INICIAR_PROCESO /pruebas/dfs2.txt
+INICIAR_PROCESO /pruebas/dfs3.txt
+INICIAR_PROCESO /pruebas/dfs4.txt
+INICIAR_PROCESO /pruebas/dfs5.txt
+INICIAR_PLANIFICACION

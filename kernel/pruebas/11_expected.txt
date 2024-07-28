@@ -1,0 +1,53 @@
+PUERTO_ESCUCHA=8003
+IP_MEMORIA=127.0.0.1
+PUERTO_MEMORIA=8002
+IP_CPU=127.0.0.1
+PUERTO_CPU_DISPATCH=8006
+PUERTO_CPU_INTERRUPT=8007
+ALGORITMO_PLANIFICACION=VRR
+QUANTUM=200
+RECURSOS=[RA,RB,RC]
+INSTANCIAS_RECURSOS=[0,2,1]
+GRADO_MULTIPROGRAMACION=7
+
+PUERTO_ESCUCHA=8002
+TAM_MEMORIA=1024
+TAM_PAGINA=16
+PATH_INSTRUCCIONES=
+RETARDO_RESPUESTA=120
+
+TIPO_INTERFAZ=GENERICA
+TIEMPO_UNIDAD_TRABAJO=250
+IP_KERNEL=127.0.0.1
+PUERTO_KERNEL=8003
+IP_MEMORIA=127.0.0.1
+PUERTO_MEMORIA=8002
+PATH_BASE_DIALFS=/home/utnso/dialfs
+BLOCK_SIZE=64
+BLOCK_COUNT=1024
+
+Levantar 3 IOs genericas, Int1 Int2 Int3.
+
+
+Ver que se desaloje un proceso por IO que le sobre Q y ejecute 1 instruccion. Puede no pasar siempre dado que depende un poco del Q.
+
+
+[INFO] 00:17:19:779 kernel/(53276:53454): El pcb <2> entro en la cola de <READY++> con un QUANTUM DE 66
+
+[INFO] 00:17:19:879 kernel/(53276:53281): PID: 2, PC: 3, QUANTUM: 66
+[INFO] 00:17:19:880 kernel/(53276:53281): AX: 1, BX: 1, CX: 0, DX: 0
+[INFO] 00:17:19:883 kernel/(53276:53281): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 00:17:19:884 kernel/(53276:53277): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 00:17:19:884 kernel/(53276:53281): SI: 0, DI: 0, PC: 3
+[INFO] 00:17:19:885 kernel/(53276:53281): PID: 2 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 00:17:19:896 kernel/(53276:53281): Logueando Quantums config: 200, param: 66
+
+
+
+[INFO] 00:17:19:965 kernel/(53276:53281): Interrumpiendo pid: 2
+[INFO] 00:17:20:047 kernel/(53276:53277): Recibi el contexto de ejecucion motivo: INTERRUPCION
+[INFO] 00:17:20:052 kernel/(53276:53277): PID: 2, PC: 4, QUANTUM: 152
+[INFO] 00:17:20:052 kernel/(53276:53277): AX: 1, BX: 1, CX: 0, DX: 0
+[INFO] 00:17:20:053 kernel/(53276:53277): EAX: 0, EBX: 2, ECX: 0, EDX: 0
+[INFO] 00:17:20:054 kernel/(53276:53277): SI: 0, DI: 0, PC: 4
+[INFO] 00:17:20:056 kernel/(53276:53277): Desaloje por fin de Quantum

@@ -1,0 +1,2 @@
+IO_FS_CREATE Int4 hola.txt
+EXIT

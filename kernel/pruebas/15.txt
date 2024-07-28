@@ -1,0 +1,4 @@
+INICIAR_PROCESO /pruebas/deadlock1.txt
+INICIAR_PROCESO /pruebas/deadlock2.txt
+INICIAR_PROCESO /pruebas/deadlock3.txt
+INICIAR_PLANIFICACION

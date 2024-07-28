@@ -1,0 +1,8 @@
+INICIAR_PROCESO /scripts_memoria/PLANI_00
+INICIAR_PROCESO /scripts_memoria/PLANI_00
+INICIAR_PROCESO /scripts_memoria/PLANI_00
+INICIAR_PROCESO /scripts_memoria/PLANI_00
+INICIAR_PROCESO /scripts_memoria/PLANI_00
+INICIAR_PROCESO /scripts_memoria/PLANI_00
+INICIAR_PROCESO /scripts_memoria/PLANI_00
+INICIAR_PROCESO /scripts_memoria/PLANI_00

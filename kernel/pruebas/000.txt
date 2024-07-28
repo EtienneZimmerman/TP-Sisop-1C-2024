@@ -1,0 +1,8 @@
+INICIAR_PROCESO /pruebas/aaaaa.txt
+INICIAR_PROCESO /pruebas/aaaaa.txt
+INICIAR_PROCESO /pruebas/aaaaa.txt
+INICIAR_PROCESO /pruebas/aaaaa.txt
+INICIAR_PROCESO /pruebas/aaaaa.txt
+INICIAR_PROCESO /pruebas/aaaaa.txt
+INICIAR_PROCESO /pruebas/aaaaa.txt
+INICIAR_PROCESO /pruebas/aaaaa.txt

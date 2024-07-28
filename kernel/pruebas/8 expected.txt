@@ -1,0 +1,158 @@
+
+[INFO] 21:51:29:750 kernel/(23273:23273):  Algoritmo planificacion: RR
+ Grado multiprogramacion: 2
+ Ip CPU: 127.0.0.1
+ Puerto Dispatch: 8006
+ Puerto Interrupt: 8007
+ Puerto Escucha: 8003
+ Quantum: 1
+[INFO] 21:51:29:750 kernel/(23273:23273): Recursos_0: RA Instancias_recursos_0: 1
+[INFO] 21:51:29:750 kernel/(23273:23273): Recursos_1: RB Instancias_recursos_1: 2
+[INFO] 21:51:29:750 kernel/(23273:23273): Recursos_2: RC Instancias_recursos_2: 1
+[INFO] 21:51:29:751 kernel/(23273:23273): POR EJECUTAR RECURSOS INIT
+[INFO] 21:51:29:751 kernel/(23273:23273): Servidor kernel levantado
+[INFO] 21:51:29:753 kernel/(23273:23277): Conexion establecida con cpu dispatch
+[INFO] 21:51:29:755 kernel/(23273:23278): Conexion establecida con cpu interrupt
+[INFO] 21:51:29:756 kernel/(23273:23279): Conexion establecida con memoria
+[INFO] 21:51:29:758 kernel/(23273:23273): Inicialice en semaforo de interrupcion por quantum
+[INFO] 21:51:29:758 kernel/(23273:23273): Inicializando hilos planificadores...
+[INFO] 21:51:29:759 kernel/(23273:23273): Prendiendo el contador de Quantum
+[INFO] 21:51:29:760 kernel/(23273:23273): El quantum sacado de la config es:  1
+>Ingrese una instruccion: [INFO] 21:51:45:770 kernel/(23273:23280): Me llego el mensaje Conectado a Kernel desde IO
+[INFO] 21:51:45:770 kernel/(23273:23280): SE CONECTO LA INTERFAZ DE NOMBRE: Int1
+EJECUTAR_SCRIPT 8.txt
+Ejecutar script con path: 8.txt
+Iniciar proceso con path: gen.txt
+[INFO] 21:51:54:341 kernel/(23273:23283): Path: gen.txt
+[INFO] 21:51:54:341 kernel/(23273:23565): Ruta del archivo: gen.txt
+[INFO] 21:51:54:341 kernel/(23273:23565): El pcb <1> entro en la cola de <NEW>
+[INFO] 21:51:54:341 kernel/(23273:23279): RECIBI FIN CREA PRO
+[INFO] 21:51:54:341 kernel/(23273:23565): Proceso creado con PID: 1
+[INFO] 21:51:54:341 kernel/(23273:23279): recibi PID: 1
+Iniciar proceso con path: gen.txt
+[INFO] 21:51:55:345 kernel/(23273:23283): Path: gen.txt
+[INFO] 21:51:55:346 kernel/(23273:23568): Ruta del archivo: gen.txt
+[INFO] 21:51:55:347 kernel/(23273:23568): El pcb <2> entro en la cola de <NEW>
+[INFO] 21:51:55:348 kernel/(23273:23568): Proceso creado con PID: 2
+[INFO] 21:51:55:349 kernel/(23273:23279): RECIBI FIN CREA PRO
+[INFO] 21:51:55:350 kernel/(23273:23279): recibi PID: 2
+Iniciar planificación
+[INFO] 21:51:56:347 kernel/(23273:23283): Path: gen.txt
+[INFO] 21:51:56:347 kernel/(23273:23567): El pcb <1> entro en la cola de <READY>
+[INFO] 21:51:56:348 kernel/(23273:23570): El pcb <2> entro en la cola de <READY>
+[INFO] 21:51:56:348 kernel/(23273:23281): Entre por RR
+[INFO] 21:51:56:349 kernel/(23273:23281): El pcb <1> entro en la cola de <RUNNING>
+[INFO] 21:51:56:349 kernel/(23273:23281): El proceso 1 cambio su estado a RUNNING
+[INFO] 21:51:56:349 kernel/(23273:23281): PID: 1 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 21:51:56:357 kernel/(23273:23282): Interrumpiendo pid: 1
+[INFO] 21:51:56:378 kernel/(23273:23277): Recibi el contexto de ejecucion motivo: 4
+[INFO] 21:51:56:378 kernel/(23273:23277): PID: 1, PC: 1, QUANTUM: 0
+[INFO] 21:51:56:378 kernel/(23273:23277): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 21:51:56:378 kernel/(23273:23277): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 21:51:56:378 kernel/(23273:23277): SI: 0, DI: 0, PC: 1
+[INFO] 21:51:56:378 kernel/(23273:23277): Recibi el interfaz: Int1 y la udt: 20
+[INFO] 21:51:56:378 kernel/(23273:23277): El pcb <1> entro en la cola de <BLOCKED>
+[INFO] 21:51:56:378 kernel/(23273:23277): por enviar peticion IO_GEN_SLEEP a la interfaz: Int1
+[INFO] 21:51:56:378 kernel/(23273:23281): Entre por RR
+[INFO] 21:51:56:379 kernel/(23273:23281): El pcb <2> entro en la cola de <RUNNING>
+[INFO] 21:51:56:379 kernel/(23273:23281): El proceso 2 cambio su estado a RUNNING
+[INFO] 21:51:56:379 kernel/(23273:23281): PID: 2 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 21:51:56:383 kernel/(23273:23282): Interrumpiendo pid: 2
+[INFO] 21:51:56:407 kernel/(23273:23277): Recibi el contexto de ejecucion motivo: 4
+[INFO] 21:51:56:407 kernel/(23273:23277): PID: 2, PC: 1, QUANTUM: 0
+[INFO] 21:51:56:407 kernel/(23273:23277): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 21:51:56:408 kernel/(23273:23277): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 21:51:56:408 kernel/(23273:23277): SI: 0, DI: 0, PC: 1
+[INFO] 21:51:56:408 kernel/(23273:23277): Recibi el interfaz: Int1 y la udt: 20
+[INFO] 21:51:56:408 kernel/(23273:23277): El pcb <2> entro en la cola de <BLOCKED>
+[INFO] 21:51:56:408 kernel/(23273:23277): por enviar peticion IO_GEN_SLEEP a la interfaz: Int1
+[INFO] 21:51:56:408 kernel/(23273:23467): me llego un IO ocupada
+[INFO] 21:51:56:408 kernel/(23273:23467): me llego la interfaz: Int1, pid: 2 
+[INFO] 21:51:56:408 kernel/(23273:23467): seleccione la interfaz: Int1
+[INFO] 21:51:56:408 kernel/(23273:23467): Encontre un PCB
+[INFO] 21:51:56:409 kernel/(23273:23467): TAMAÑO DE LA LISTA DE BLOQUEADOS EN INTERFAZ: 1
+[INFO] 21:51:57:348 kernel/(23273:23283): Path: 8.txt
+>Ingrese una instruccion: [INFO] 21:52:01:383 kernel/(23273:23467): me llego un fin IO
+[INFO] 21:52:01:384 kernel/(23273:23467): me llego la interfaz: Int1, pid: 1 
+[INFO] 21:52:01:384 kernel/(23273:23467): El pcb <1> entro en la cola de <READY>
+[INFO] 21:52:01:384 kernel/(23273:23467): por enviar peticion IO_GEN_SLEEP a la interfaz: Int1
+[INFO] 21:52:01:385 kernel/(23273:23281): Entre por RR
+[INFO] 21:52:01:385 kernel/(23273:23281): El pcb <1> entro en la cola de <RUNNING>
+[INFO] 21:52:01:386 kernel/(23273:23281): El proceso 1 cambio su estado a RUNNING
+[INFO] 21:52:01:386 kernel/(23273:23281): PID: 1 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 21:52:01:393 kernel/(23273:23282): Interrumpiendo pid: 1
+[INFO] 21:52:01:415 kernel/(23273:23277): Recibi el contexto de ejecucion motivo: TERMINAR_PROCESO
+[INFO] 21:52:01:415 kernel/(23273:23277): PID: 1, PC: 1, QUANTUM: 0
+[INFO] 21:52:01:416 kernel/(23273:23277): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 21:52:01:416 kernel/(23273:23277): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 21:52:01:416 kernel/(23273:23277): SI: 0, DI: 0, PC: 1
+[INFO] 21:52:01:416 kernel/(23273:23277): Desaloje para finalizar el proceso.
+[INFO] 21:52:01:416 kernel/(23273:23277): La cantidad de recursos_tomados por pid <1> ES: <0>
+[INFO] 21:52:01:416 kernel/(23273:23277): El pcb <1> entro en la cola de <EXIT>
+[INFO] 21:52:01:416 kernel/(23273:23277): Se solicitó eliminar el proceso con PID: 1
+[INFO] 21:52:01:416 kernel/(23273:23277): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 21:52:01:419 kernel/(23273:23279): Finalice correctamente el PCB con pid: 1
+[INFO] 21:52:06:394 kernel/(23273:23467): me llego un fin IO
+[INFO] 21:52:06:394 kernel/(23273:23467): me llego la interfaz: Int1, pid: 2 
+[INFO] 21:52:06:394 kernel/(23273:23467): El pcb <2> entro en la cola de <READY>
+[INFO] 21:52:06:394 kernel/(23273:23281): Entre por RR
+[INFO] 21:52:06:395 kernel/(23273:23281): El pcb <2> entro en la cola de <RUNNING>
+[INFO] 21:52:06:395 kernel/(23273:23281): El proceso 2 cambio su estado a RUNNING
+[INFO] 21:52:06:395 kernel/(23273:23281): PID: 2 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 21:52:06:400 kernel/(23273:23282): Interrumpiendo pid: 2
+[INFO] 21:52:06:421 kernel/(23273:23277): Recibi el contexto de ejecucion motivo: TERMINAR_PROCESO
+[INFO] 21:52:06:421 kernel/(23273:23277): PID: 2, PC: 1, QUANTUM: 0
+[INFO] 21:52:06:421 kernel/(23273:23277): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 21:52:06:421 kernel/(23273:23277): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 21:52:06:421 kernel/(23273:23277): SI: 0, DI: 0, PC: 1
+[INFO] 21:52:06:421 kernel/(23273:23277): Desaloje para finalizar el proceso.
+[INFO] 21:52:06:421 kernel/(23273:23277): La cantidad de recursos_tomados por pid <2> ES: <0>
+[INFO] 21:52:06:421 kernel/(23273:23277): El pcb <2> entro en la cola de <EXIT>
+[INFO] 21:52:06:421 kernel/(23273:23277): Se solicitó eliminar el proceso con PID: 2
+[INFO] 21:52:06:421 kernel/(23273:23277): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 21:52:06:421 kernel/(23273:23279): Finalice correctamente el PCB con pid: 2
+PROCESO_ESTAO
+El comando no existe
+[INFO] 21:52:10:861 kernel/(23273:23283): Path: 
+>Ingrese una instruccion: PROCESO_ESTADO
+Estado del proceso
+[INFO] 21:52:15:827 kernel/(23273:23283): Logueando PCBs en NEW
+[INFO] 21:52:15:827 kernel/(23273:23283): Logueando PCBs en READY
+[INFO] 21:52:15:827 kernel/(23273:23283): Logueando PCB en EXEC
+[INFO] 21:52:15:827 kernel/(23273:23283): No hay procesos en exec
+[INFO] 21:52:15:827 kernel/(23273:23283): Logueando PCBs en BLOCKED
+[INFO] 21:52:15:827 kernel/(23273:23283): Logueando PCBs en EXIT
+[INFO] 21:52:15:827 kernel/(23273:23283): PID: 1, PC: 1, QUANTUM: 0
+[INFO] 21:52:15:827 kernel/(23273:23283): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 21:52:15:827 kernel/(23273:23283): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 21:52:15:827 kernel/(23273:23283): SI: 0, DI: 0, PC: 1
+[INFO] 21:52:15:827 kernel/(23273:23283): PID: 2, PC: 1, QUANTUM: 0
+[INFO] 21:52:15:827 kernel/(23273:23283): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 21:52:15:827 kernel/(23273:23283): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 21:52:15:827 kernel/(23273:23283): SI: 0, DI: 0, PC: 1
+[INFO] 21:52:15:827 kernel/(23273:23283): Path: 
+
+
+PUERTO_ESCUCHA=8003
+IP_MEMORIA=127.0.0.1
+PUERTO_MEMORIA=8002
+IP_CPU=127.0.0.1
+PUERTO_CPU_DISPATCH=8006
+PUERTO_CPU_INTERRUPT=8007
+ALGORITMO_PLANIFICACION=FIFO  // creo que es indistinto el algoritmo, solo tiene 1 instruccion 
+QUANTUM=2000
+RECURSOS=[RA,RB,RC]
+INSTANCIAS_RECURSOS=[1,2,1]
+GRADO_MULTIPROGRAMACION=2
+
+
+TIPO_INTERFAZ=GENERICA // recorar cambiarla entre el 8 y 9
+TIEMPO_UNIDAD_TRABAJO=250
+IP_KERNEL=127.0.0.1
+PUERTO_KERNEL=8003
+IP_MEMORIA=127.0.0.1
+PUERTO_MEMORIA=8002
+PATH_BASE_DIALFS=/home/utnso/dialfs
+BLOCK_SIZE=64
+BLOCK_COUNT=1024
+

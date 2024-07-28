@@ -1,0 +1,4 @@
+INICIAR_PROCESO /pruebas/vrr111.txt
+INICIAR_PROCESO /pruebas/vrr222.txt
+INICIAR_PROCESO /pruebas/vrr333.txt
+INICIAR_PLANIFICACION

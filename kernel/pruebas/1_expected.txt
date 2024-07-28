@@ -1,0 +1,178 @@
+[INFO] 21:00:32:433 kernel/(35161:35161):  Algoritmo planificacion: FIFO
+ Grado multiprogramacion: 3
+ Ip CPU: 127.0.0.1
+ Puerto Dispatch: 8006
+ Puerto Interrupt: 8007
+ Puerto Escucha: 8003
+ Quantum: 100
+[INFO] 21:00:32:433 kernel/(35161:35161): Recursos_0: RA Instancias_recursos_0: 1
+[INFO] 21:00:32:433 kernel/(35161:35161): Recursos_1: RB Instancias_recursos_1: 2
+[INFO] 21:00:32:433 kernel/(35161:35161): Recursos_2: RC Instancias_recursos_2: 1
+[INFO] 21:00:32:433 kernel/(35161:35161): POR EJECUTAR RECURSOS INIT
+[INFO] 21:00:32:433 kernel/(35161:35161): Servidor kernel levantado
+[INFO] 21:00:32:436 kernel/(35161:35178): Conexion establecida con cpu interrupt
+[INFO] 21:00:32:436 kernel/(35161:35177): Conexion establecida con cpu dispatch
+[INFO] 21:00:32:438 kernel/(35161:35161): Inicializando hilos planificadores...
+[INFO] 21:00:32:438 kernel/(35161:35179): Conexion establecida con memoria
+>Ingrese una instruccion: EJECUTAR_SCRIPT 1.txt
+Ejecutar script con path: 1.txt
+Iniciar proceso con path: sarasa.txt
+[INFO] 21:00:41:030 kernel/(35161:35179): RECIBI FIN CREA PRO
+[INFO] 21:00:41:031 kernel/(35161:35179): recibi PID: 1
+[INFO] 21:00:41:029 kernel/(35161:35283): El pcb <1> entro en la cola de <NEW>
+[INFO] 21:00:41:032 kernel/(35161:35283): Proceso creado con PID: 1
+Iniciar proceso con path: sarasa.txt
+[INFO] 21:00:42:034 kernel/(35161:35179): RECIBI FIN CREA PRO
+[INFO] 21:00:42:035 kernel/(35161:35179): recibi PID: 2
+[INFO] 21:00:42:035 kernel/(35161:35285): El pcb <2> entro en la cola de <NEW>
+[INFO] 21:00:42:035 kernel/(35161:35285): Proceso creado con PID: 2
+Iniciar planificación
+[INFO] 21:00:43:035 kernel/(35161:35284): El pcb <1> entro en la cola de <READY>
+[INFO] 21:00:43:036 kernel/(35161:35287): El pcb <2> entro en la cola de <READY>
+[INFO] 21:00:43:036 kernel/(35161:35181): Entre por FIFO
+[INFO] 21:00:43:037 kernel/(35161:35181): El pcb <1> entro en la cola de <RUNNING>
+[INFO] 21:00:43:038 kernel/(35161:35181): PID: 1 - Estado Anterior: READY - Estado Actual: RUNNING
+Estado del proceso
+[INFO] 21:00:44:035 kernel/(35161:35182): Logueando PCBs en NEW
+[INFO] 21:00:44:036 kernel/(35161:35182): Logueando PCBs en READY
+[INFO] 21:00:44:036 kernel/(35161:35182): PID: 2, PC: 0, QUANTUM: 0
+[INFO] 21:00:44:036 kernel/(35161:35182): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 21:00:44:036 kernel/(35161:35182): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 21:00:44:036 kernel/(35161:35182): SI: 0, DI: 0, PC: 0
+[INFO] 21:00:44:037 kernel/(35161:35182): Logueando PCB en EXEC
+[INFO] 21:00:44:037 kernel/(35161:35182): PID: 1, PC: 0, QUANTUM: 0
+[INFO] 21:00:44:037 kernel/(35161:35182): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 21:00:44:037 kernel/(35161:35182): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 21:00:44:037 kernel/(35161:35182): SI: 0, DI: 0, PC: 0
+[INFO] 21:00:44:037 kernel/(35161:35182): Logueando PCBs en BLOCKED
+[INFO] 21:00:44:037 kernel/(35161:35182): Logueando PCBs en EXIT
+Detener planificación
+Finalizar proceso con PID: 2
+Iniciar planificación
+[INFO] 21:00:47:046 kernel/(35161:35364): El pcb <2> entro en la cola de <EXIT>
+[INFO] 21:00:47:046 kernel/(35161:35364): Se solicitó eliminar el proceso con PID: 2
+[INFO] 21:00:47:049 kernel/(35161:35179): Finalice correctamente el PCB con pid: 2
+Estado del proceso
+[INFO] 21:00:48:047 kernel/(35161:35182): Logueando PCBs en NEW
+[INFO] 21:00:48:047 kernel/(35161:35182): Logueando PCBs en READY
+[INFO] 21:00:48:047 kernel/(35161:35182): Logueando PCB en EXEC
+[INFO] 21:00:48:048 kernel/(35161:35182): PID: 1, PC: 0, QUANTUM: 0
+[INFO] 21:00:48:048 kernel/(35161:35182): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 21:00:48:048 kernel/(35161:35182): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 21:00:48:048 kernel/(35161:35182): SI: 0, DI: 0, PC: 0
+[INFO] 21:00:48:049 kernel/(35161:35182): Logueando PCBs en BLOCKED
+[INFO] 21:00:48:049 kernel/(35161:35182): Logueando PCBs en EXIT
+[INFO] 21:00:48:051 kernel/(35161:35182): PID: 2, PC: 0, QUANTUM: 0
+[INFO] 21:00:48:051 kernel/(35161:35182): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 21:00:48:051 kernel/(35161:35182): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 21:00:48:051 kernel/(35161:35182): SI: 0, DI: 0, PC: 0
+Detener planificación
+Iniciar proceso con path: sarasa.txt
+[INFO] 21:00:50:057 kernel/(35161:35436): El pcb <3> entro en la cola de <NEW>
+[INFO] 21:00:50:058 kernel/(35161:35436): Proceso creado con PID: 3
+[INFO] 21:00:50:059 kernel/(35161:35179): RECIBI FIN CREA PRO
+[INFO] 21:00:50:059 kernel/(35161:35179): recibi PID: 3
+Iniciar planificación
+[INFO] 21:00:51:061 kernel/(35161:35437): El pcb <3> entro en la cola de <READY>
+Finalizar proceso con PID: 3
+[INFO] 21:00:52:063 kernel/(35161:35466): El pcb <3> entro en la cola de <EXIT>
+[INFO] 21:00:52:063 kernel/(35161:35466): Se solicitó eliminar el proceso con PID: 3
+[INFO] 21:00:52:064 kernel/(35161:35179): Finalice correctamente el PCB con pid: 3
+Detener planificación
+Estado del proceso
+[INFO] 21:00:54:065 kernel/(35161:35182): Logueando PCBs en NEW
+[INFO] 21:00:54:065 kernel/(35161:35182): Logueando PCBs en READY
+[INFO] 21:00:54:065 kernel/(35161:35182): Logueando PCB en EXEC
+[INFO] 21:00:54:065 kernel/(35161:35182): PID: 1, PC: 0, QUANTUM: 0
+[INFO] 21:00:54:065 kernel/(35161:35182): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 21:00:54:065 kernel/(35161:35182): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 21:00:54:065 kernel/(35161:35182): SI: 0, DI: 0, PC: 0
+[INFO] 21:00:54:066 kernel/(35161:35182): Logueando PCBs en BLOCKED
+[INFO] 21:00:54:066 kernel/(35161:35182): Logueando PCBs en EXIT
+[INFO] 21:00:54:066 kernel/(35161:35182): PID: 2, PC: 0, QUANTUM: 0
+[INFO] 21:00:54:066 kernel/(35161:35182): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 21:00:54:066 kernel/(35161:35182): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 21:00:54:066 kernel/(35161:35182): SI: 0, DI: 0, PC: 0
+[INFO] 21:00:54:066 kernel/(35161:35182): PID: 3, PC: 0, QUANTUM: 0
+[INFO] 21:00:54:066 kernel/(35161:35182): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 21:00:54:067 kernel/(35161:35182): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 21:00:54:067 kernel/(35161:35182): SI: 0, DI: 0, PC: 0
+Finalizar proceso con PID: 1
+[INFO] 21:00:55:136 kernel/(35161:35177): Recibi el contexto de ejecucion motivo: TERMINAR_PROCESO
+[INFO] 21:00:55:136 kernel/(35161:35177): PID: 1, PC: 12, QUANTUM: 0
+[INFO] 21:00:55:136 kernel/(35161:35177): AX: 18, BX: 1, CX: 0, DX: 0
+[INFO] 21:00:55:136 kernel/(35161:35177): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 21:00:55:136 kernel/(35161:35177): SI: 0, DI: 0, PC: 12
+[INFO] 21:00:55:136 kernel/(35161:35177): Desaloje para finalizar el proceso.
+Iniciar planificación
+[INFO] 21:00:56:075 kernel/(35161:35519): Interrumpiendo pid: 1
+[INFO] 21:00:56:076 kernel/(35161:35177): La cantidad de recursos_tomados por pid <1> ES: <0>
+[INFO] 21:00:56:076 kernel/(35161:35177): El pcb <1> entro en la cola de <EXIT>
+[INFO] 21:00:56:077 kernel/(35161:35177): Se solicitó eliminar el proceso con PID: 1
+[INFO] 21:00:56:078 kernel/(35161:35179): Finalice correctamente el PCB con pid: 1
+Estado del proceso
+[INFO] 21:00:57:075 kernel/(35161:35182): Logueando PCBs en NEW
+[INFO] 21:00:57:075 kernel/(35161:35182): Logueando PCBs en READY
+[INFO] 21:00:57:075 kernel/(35161:35182): Logueando PCB en EXEC
+[INFO] 21:00:57:075 kernel/(35161:35182): No hay procesos en exec
+[INFO] 21:00:57:075 kernel/(35161:35182): Logueando PCBs en BLOCKED
+[INFO] 21:00:57:075 kernel/(35161:35182): Logueando PCBs en EXIT
+[INFO] 21:00:57:075 kernel/(35161:35182): PID: 2, PC: 0, QUANTUM: 0
+[INFO] 21:00:57:075 kernel/(35161:35182): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 21:00:57:075 kernel/(35161:35182): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 21:00:57:075 kernel/(35161:35182): SI: 0, DI: 0, PC: 0
+[INFO] 21:00:57:075 kernel/(35161:35182): PID: 3, PC: 0, QUANTUM: 0
+[INFO] 21:00:57:075 kernel/(35161:35182): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 21:00:57:076 kernel/(35161:35182): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 21:00:57:076 kernel/(35161:35182): SI: 0, DI: 0, PC: 0
+[INFO] 21:00:57:076 kernel/(35161:35182): PID: 1, PC: 12, QUANTUM: 0
+[INFO] 21:00:57:076 kernel/(35161:35182): AX: 18, BX: 1, CX: 0, DX: 0
+[INFO] 21:00:57:076 kernel/(35161:35182): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 21:00:57:076 kernel/(35161:35182): SI: 0, DI: 0, PC: 12
+[INFO] 21:00:57:077 kernel/(35161:35177): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 21:00:57:077 kernel/(35161:35181): Entre por FIFO
+
+
+// ----------------------------------------
+// - CONFIG USADA -------------------------
+// ----------------------------------------
+
+PUERTO_ESCUCHA=8003
+IP_MEMORIA=127.0.0.1
+PUERTO_MEMORIA=8002
+IP_CPU=127.0.0.1
+PUERTO_CPU_DISPATCH=8006
+PUERTO_CPU_INTERRUPT=8007
+ALGORITMO_PLANIFICACION=FIFO
+QUANTUM=2000
+RECURSOS=[RA,RB,RC]
+INSTANCIAS_RECURSOS=[1,2,1]
+GRADO_MULTIPROGRAMACION=2
+
+MEMORIA: 
+
+PUERTO_ESCUCHA=8002
+TAM_MEMORIA=4096
+TAM_PAGINA=32
+PATH_INSTRUCCIONES=
+RETARDO_RESPUESTA=1000
+
+
+// ----------------------------------------
+// - sarasa.txt ---------------------------
+// ----------------------------------------
+
+
+SET AX 1
+SET BX 1
+SUM AX BX
+SET AX 10
+SUM AX BX
+SUM AX BX
+SUM AX BX
+SUM AX BX
+SUM AX BX
+SUM AX BX
+SUM AX BX
+SUM AX BX
+EXIT

@@ -1,0 +1,626 @@
+[INFO] 20:32:41:210 kernel/(20541:20541):  Algoritmo planificacion: RR
+ Grado multiprogramacion: 3
+ Ip CPU: 127.0.0.1
+ Puerto Dispatch: 8006
+ Puerto Interrupt: 8007
+ Puerto Escucha: 8003
+ Quantum: 1
+[INFO] 20:32:41:210 kernel/(20541:20541): Recursos_0: RA Instancias_recursos_0: 1
+[INFO] 20:32:41:210 kernel/(20541:20541): Recursos_1: RB Instancias_recursos_1: 1
+[INFO] 20:32:41:210 kernel/(20541:20541): Recursos_2: RC Instancias_recursos_2: 1
+[INFO] 20:32:41:210 kernel/(20541:20541): POR EJECUTAR RECURSOS INIT
+[INFO] 20:32:41:210 kernel/(20541:20541): Servidor kernel levantado
+[INFO] 20:32:41:211 kernel/(20541:20545): Conexion establecida con cpu dispatch
+[INFO] 20:32:41:212 kernel/(20541:20546): Conexion establecida con cpu interrupt
+[INFO] 20:32:41:213 kernel/(20541:20547): Conexion establecida con memoria
+[INFO] 20:32:41:213 kernel/(20541:20541): Inicialice en semaforo de interrupcion por quantum
+[INFO] 20:32:41:213 kernel/(20541:20541): Inicializando hilos planificadores...
+[INFO] 20:32:41:214 kernel/(20541:20541): Prendiendo el contador de Quantum
+[INFO] 20:32:41:214 kernel/(20541:20541): El quantum sacado de la config es:  1
+[INFO] 20:32:49:353 kernel/(20541:20551): Path: deadlock1.txt
+[INFO] 20:32:49:354 kernel/(20541:20665): Ruta del archivo: deadlock1.txt
+[INFO] 20:32:49:354 kernel/(20541:20665): El pcb <1> entro en la cola de <NEW>
+[INFO] 20:32:49:354 kernel/(20541:20665): Proceso creado con PID: 1
+[INFO] 20:32:49:354 kernel/(20541:20547): RECIBI FIN CREA PRO
+[INFO] 20:32:49:354 kernel/(20541:20547): recibi PID: 1
+[INFO] 20:32:50:354 kernel/(20541:20551): Path: deadlock2.txt
+[INFO] 20:32:50:354 kernel/(20541:20669): Ruta del archivo: deadlock2.txt
+[INFO] 20:32:50:354 kernel/(20541:20669): El pcb <2> entro en la cola de <NEW>
+[INFO] 20:32:50:354 kernel/(20541:20669): Proceso creado con PID: 2
+[INFO] 20:32:50:355 kernel/(20541:20547): RECIBI FIN CREA PRO
+[INFO] 20:32:50:355 kernel/(20541:20547): recibi PID: 2
+[INFO] 20:32:51:355 kernel/(20541:20551): Path: deadlock3.txt
+[INFO] 20:32:51:355 kernel/(20541:20695): Ruta del archivo: deadlock3.txt
+[INFO] 20:32:51:355 kernel/(20541:20695): El pcb <3> entro en la cola de <NEW>
+[INFO] 20:32:51:355 kernel/(20541:20695): Proceso creado con PID: 3
+[INFO] 20:32:51:356 kernel/(20541:20547): RECIBI FIN CREA PRO
+[INFO] 20:32:51:356 kernel/(20541:20547): recibi PID: 3
+[INFO] 20:32:52:355 kernel/(20541:20551): Path: deadlock3.txt
+[INFO] 20:32:52:356 kernel/(20541:20666): El pcb <1> entro en la cola de <READY>
+[INFO] 20:32:52:356 kernel/(20541:20549): Entre por RR
+[INFO] 20:32:52:356 kernel/(20541:20549): El pcb <1> entro en la cola de <RUNNING>
+[INFO] 20:32:52:356 kernel/(20541:20549): El proceso 1 cambio su estado a RUNNING
+[INFO] 20:32:52:356 kernel/(20541:20549): PID: 1 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 20:32:52:356 kernel/(20541:20670): El pcb <2> entro en la cola de <READY>
+[INFO] 20:32:52:356 kernel/(20541:20696): El pcb <3> entro en la cola de <READY>
+[INFO] 20:32:52:359 kernel/(20541:20550): Interrumpiendo pid: 1
+
+[INFO] 20:32:52:389 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: MOTIVO_WAIT
+[INFO] 20:32:52:389 kernel/(20541:20545): PID: 1, PC: 1, QUANTUM: 0
+[INFO] 20:32:52:389 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:389 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:389 kernel/(20541:20545): SI: 0, DI: 0, PC: 1
+[INFO] 20:32:52:389 kernel/(20541:20545): recurso: RA
+[INFO] 20:32:52:389 kernel/(20541:20545): recibir_contexto_ejecucion_motivo_wait(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 20:32:52:389 kernel/(20541:20545): Logueando PCBs en NEW
+[INFO] 20:32:52:389 kernel/(20541:20545): Logueando PCBs en READY
+[INFO] 20:32:52:389 kernel/(20541:20545): PID: 2, PC: 0, QUANTUM: 0
+[INFO] 20:32:52:389 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:389 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:389 kernel/(20541:20545): SI: 0, DI: 0, PC: 0
+[INFO] 20:32:52:389 kernel/(20541:20545): PID: 3, PC: 0, QUANTUM: 0
+[INFO] 20:32:52:389 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:389 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:389 kernel/(20541:20545): SI: 0, DI: 0, PC: 0
+[INFO] 20:32:52:389 kernel/(20541:20545): Logueando PCB en EXEC
+[INFO] 20:32:52:389 kernel/(20541:20545): PID: 1, PC: 1, QUANTUM: 0
+[INFO] 20:32:52:389 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:389 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:389 kernel/(20541:20545): SI: 0, DI: 0, PC: 1
+[INFO] 20:32:52:389 kernel/(20541:20545): Logueando PCBs en BLOCKED
+[INFO] 20:32:52:389 kernel/(20541:20545): Logueando PCBs en EXIT
+[INFO] 20:32:52:389 kernel/(20541:20545): Instancias del recurso RA : 1
+[INFO] 20:32:52:389 kernel/(20541:20545): Instancias del recurso RA : 0
+[INFO] 20:32:52:389 kernel/(20541:20545): antes de agregar RA a la lista de recursos_tomados del proceso 1 tiene 0 elementos
+[INFO] 20:32:52:389 kernel/(20541:20545): despues de agregar RA a la lista de recursos_tomados del proceso 1 tiene 1 elementos
+
+[INFO] 20:32:52:390 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: INTERRUPCION
+[INFO] 20:32:52:390 kernel/(20541:20545): PID: 1, PC: 1, QUANTUM: 0
+[INFO] 20:32:52:390 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:390 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:390 kernel/(20541:20545): SI: 0, DI: 0, PC: 1
+[INFO] 20:32:52:390 kernel/(20541:20545): Desaloje por fin de Quantum
+[INFO] 20:32:52:390 kernel/(20541:20545): El pcb <1> entro en la cola de <READY>
+[INFO] 20:32:52:390 kernel/(20541:20545): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 20:32:52:390 kernel/(20541:20549): Entre por RR
+[INFO] 20:32:52:390 kernel/(20541:20549): El pcb <2> entro en la cola de <RUNNING>
+[INFO] 20:32:52:390 kernel/(20541:20549): El proceso 2 cambio su estado a RUNNING
+[INFO] 20:32:52:390 kernel/(20541:20549): PID: 2 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 20:32:52:393 kernel/(20541:20550): Interrumpiendo pid: 2
+
+[INFO] 20:32:52:423 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: MOTIVO_WAIT
+[INFO] 20:32:52:423 kernel/(20541:20545): PID: 2, PC: 1, QUANTUM: 0
+[INFO] 20:32:52:423 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:423 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:423 kernel/(20541:20545): SI: 0, DI: 0, PC: 1
+[INFO] 20:32:52:423 kernel/(20541:20545): recurso: RB
+[INFO] 20:32:52:423 kernel/(20541:20545): recibir_contexto_ejecucion_motivo_wait(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 20:32:52:423 kernel/(20541:20545): Logueando PCBs en NEW
+[INFO] 20:32:52:423 kernel/(20541:20545): Logueando PCBs en READY
+[INFO] 20:32:52:423 kernel/(20541:20545): PID: 3, PC: 0, QUANTUM: 0
+[INFO] 20:32:52:423 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:423 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:423 kernel/(20541:20545): SI: 0, DI: 0, PC: 0
+[INFO] 20:32:52:423 kernel/(20541:20545): PID: 1, PC: 1, QUANTUM: 0
+[INFO] 20:32:52:423 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:423 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:423 kernel/(20541:20545): SI: 0, DI: 0, PC: 1
+[INFO] 20:32:52:423 kernel/(20541:20545): Logueando PCB en EXEC
+[INFO] 20:32:52:423 kernel/(20541:20545): PID: 2, PC: 1, QUANTUM: 0
+[INFO] 20:32:52:424 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:424 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:424 kernel/(20541:20545): SI: 0, DI: 0, PC: 1
+[INFO] 20:32:52:424 kernel/(20541:20545): Logueando PCBs en BLOCKED
+[INFO] 20:32:52:424 kernel/(20541:20545): Logueando PCBs en EXIT
+[INFO] 20:32:52:424 kernel/(20541:20545): Instancias del recurso RB : 1
+[INFO] 20:32:52:424 kernel/(20541:20545): Instancias del recurso RB : 0
+[INFO] 20:32:52:424 kernel/(20541:20545): antes de agregar RB a la lista de recursos_tomados del proceso 2 tiene 0 elementos
+[INFO] 20:32:52:424 kernel/(20541:20545): despues de agregar RB a la lista de recursos_tomados del proceso 2 tiene 1 elementos
+
+[INFO] 20:32:52:424 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: INTERRUPCION
+[INFO] 20:32:52:424 kernel/(20541:20545): PID: 2, PC: 1, QUANTUM: 0
+[INFO] 20:32:52:424 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:424 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:424 kernel/(20541:20545): SI: 0, DI: 0, PC: 1
+[INFO] 20:32:52:424 kernel/(20541:20545): Desaloje por fin de Quantum
+[INFO] 20:32:52:424 kernel/(20541:20545): El pcb <2> entro en la cola de <READY>
+[INFO] 20:32:52:424 kernel/(20541:20545): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 20:32:52:424 kernel/(20541:20549): Entre por RR
+[INFO] 20:32:52:424 kernel/(20541:20549): El pcb <3> entro en la cola de <RUNNING>
+[INFO] 20:32:52:424 kernel/(20541:20549): El proceso 3 cambio su estado a RUNNING
+[INFO] 20:32:52:424 kernel/(20541:20549): PID: 3 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 20:32:52:426 kernel/(20541:20550): Interrumpiendo pid: 3
+
+[INFO] 20:32:52:458 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: MOTIVO_WAIT
+[INFO] 20:32:52:458 kernel/(20541:20545): PID: 3, PC: 1, QUANTUM: 0
+[INFO] 20:32:52:458 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:458 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:458 kernel/(20541:20545): SI: 0, DI: 0, PC: 1
+[INFO] 20:32:52:458 kernel/(20541:20545): recurso: RC
+[INFO] 20:32:52:458 kernel/(20541:20545): recibir_contexto_ejecucion_motivo_wait(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 20:32:52:458 kernel/(20541:20545): Logueando PCBs en NEW
+[INFO] 20:32:52:458 kernel/(20541:20545): Logueando PCBs en READY
+[INFO] 20:32:52:458 kernel/(20541:20545): PID: 1, PC: 1, QUANTUM: 0
+[INFO] 20:32:52:458 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:458 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:458 kernel/(20541:20545): SI: 0, DI: 0, PC: 1
+[INFO] 20:32:52:458 kernel/(20541:20545): PID: 2, PC: 1, QUANTUM: 0
+[INFO] 20:32:52:458 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:458 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:458 kernel/(20541:20545): SI: 0, DI: 0, PC: 1
+[INFO] 20:32:52:458 kernel/(20541:20545): Logueando PCB en EXEC
+[INFO] 20:32:52:458 kernel/(20541:20545): PID: 3, PC: 1, QUANTUM: 0
+[INFO] 20:32:52:458 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:459 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:459 kernel/(20541:20545): SI: 0, DI: 0, PC: 1
+[INFO] 20:32:52:459 kernel/(20541:20545): Logueando PCBs en BLOCKED
+[INFO] 20:32:52:459 kernel/(20541:20545): Logueando PCBs en EXIT
+[INFO] 20:32:52:459 kernel/(20541:20545): Instancias del recurso RC : 1
+[INFO] 20:32:52:459 kernel/(20541:20545): Instancias del recurso RC : 0
+[INFO] 20:32:52:459 kernel/(20541:20545): antes de agregar RC a la lista de recursos_tomados del proceso 3 tiene 0 elementos
+[INFO] 20:32:52:459 kernel/(20541:20545): despues de agregar RC a la lista de recursos_tomados del proceso 3 tiene 1 elementos
+
+[INFO] 20:32:52:459 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: INTERRUPCION
+[INFO] 20:32:52:459 kernel/(20541:20545): PID: 3, PC: 1, QUANTUM: 0
+[INFO] 20:32:52:459 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:459 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:459 kernel/(20541:20545): SI: 0, DI: 0, PC: 1
+[INFO] 20:32:52:459 kernel/(20541:20545): Desaloje por fin de Quantum
+[INFO] 20:32:52:459 kernel/(20541:20545): El pcb <3> entro en la cola de <READY>
+[INFO] 20:32:52:459 kernel/(20541:20545): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 20:32:52:459 kernel/(20541:20549): Entre por RR
+[INFO] 20:32:52:459 kernel/(20541:20549): El pcb <1> entro en la cola de <RUNNING>
+[INFO] 20:32:52:459 kernel/(20541:20549): El proceso 1 cambio su estado a RUNNING
+[INFO] 20:32:52:459 kernel/(20541:20549): PID: 1 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 20:32:52:462 kernel/(20541:20550): Interrumpiendo pid: 1
+
+[INFO] 20:32:52:497 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: MOTIVO_WAIT
+[INFO] 20:32:52:497 kernel/(20541:20545): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 20:32:52:497 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:497 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:497 kernel/(20541:20545): SI: 0, DI: 0, PC: 2
+[INFO] 20:32:52:497 kernel/(20541:20545): recurso: RB
+[INFO] 20:32:52:497 kernel/(20541:20545): recibir_contexto_ejecucion_motivo_wait(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 20:32:52:497 kernel/(20541:20545): Logueando PCBs en NEW
+[INFO] 20:32:52:497 kernel/(20541:20545): Logueando PCBs en READY
+[INFO] 20:32:52:497 kernel/(20541:20545): PID: 2, PC: 1, QUANTUM: 0
+[INFO] 20:32:52:497 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:497 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:497 kernel/(20541:20545): SI: 0, DI: 0, PC: 1
+[INFO] 20:32:52:497 kernel/(20541:20545): PID: 3, PC: 1, QUANTUM: 0
+[INFO] 20:32:52:497 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:497 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:497 kernel/(20541:20545): SI: 0, DI: 0, PC: 1
+[INFO] 20:32:52:497 kernel/(20541:20545): Logueando PCB en EXEC
+[INFO] 20:32:52:497 kernel/(20541:20545): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 20:32:52:497 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:497 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:497 kernel/(20541:20545): SI: 0, DI: 0, PC: 2
+[INFO] 20:32:52:497 kernel/(20541:20545): Logueando PCBs en BLOCKED
+[INFO] 20:32:52:497 kernel/(20541:20545): Logueando PCBs en EXIT
+[INFO] 20:32:52:497 kernel/(20541:20545): Instancias del recurso RB : 0
+[INFO] 20:32:52:497 kernel/(20541:20545): Instancias del recurso RB : -1
+[INFO] 20:32:52:497 kernel/(20541:20545): El pcb <1> entro en la cola de <BLOCKED>
+[INFO] 20:32:52:497 kernel/(20541:20549): Entre por RR
+[INFO] 20:32:52:497 kernel/(20541:20549): El pcb <2> entro en la cola de <RUNNING>
+[INFO] 20:32:52:497 kernel/(20541:20549): El proceso 2 cambio su estado a RUNNING
+[INFO] 20:32:52:497 kernel/(20541:20549): PID: 2 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 20:32:52:497 kernel/(20541:20545): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 20:32:52:499 kernel/(20541:20550): Interrumpiendo pid: 2
+
+[INFO] 20:32:52:533 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: MOTIVO_WAIT
+[INFO] 20:32:52:533 kernel/(20541:20545): PID: 2, PC: 2, QUANTUM: 0
+[INFO] 20:32:52:533 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:533 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:533 kernel/(20541:20545): SI: 0, DI: 0, PC: 2
+[INFO] 20:32:52:533 kernel/(20541:20545): recurso: RC
+[INFO] 20:32:52:533 kernel/(20541:20545): recibir_contexto_ejecucion_motivo_wait(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 20:32:52:533 kernel/(20541:20545): Logueando PCBs en NEW
+[INFO] 20:32:52:533 kernel/(20541:20545): Logueando PCBs en READY
+[INFO] 20:32:52:533 kernel/(20541:20545): PID: 3, PC: 1, QUANTUM: 0
+[INFO] 20:32:52:533 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:533 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:533 kernel/(20541:20545): SI: 0, DI: 0, PC: 1
+[INFO] 20:32:52:533 kernel/(20541:20545): Logueando PCB en EXEC
+[INFO] 20:32:52:533 kernel/(20541:20545): PID: 2, PC: 2, QUANTUM: 0
+[INFO] 20:32:52:533 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:533 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:533 kernel/(20541:20545): SI: 0, DI: 0, PC: 2
+[INFO] 20:32:52:533 kernel/(20541:20545): Logueando PCBs en BLOCKED
+[INFO] 20:32:52:533 kernel/(20541:20545): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 20:32:52:533 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:533 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:533 kernel/(20541:20545): SI: 0, DI: 0, PC: 2
+[INFO] 20:32:52:533 kernel/(20541:20545): Logueando PCBs en EXIT
+[INFO] 20:32:52:533 kernel/(20541:20545): Instancias del recurso RC : 0
+[INFO] 20:32:52:533 kernel/(20541:20545): Instancias del recurso RC : -1
+[INFO] 20:32:52:533 kernel/(20541:20545): El pcb <2> entro en la cola de <BLOCKED>
+[INFO] 20:32:52:533 kernel/(20541:20549): Entre por RR
+[INFO] 20:32:52:533 kernel/(20541:20549): El pcb <3> entro en la cola de <RUNNING>
+[INFO] 20:32:52:533 kernel/(20541:20549): El proceso 3 cambio su estado a RUNNING
+[INFO] 20:32:52:533 kernel/(20541:20549): PID: 3 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 20:32:52:533 kernel/(20541:20545): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 20:32:52:538 kernel/(20541:20550): Interrumpiendo pid: 3
+
+[INFO] 20:32:52:572 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: MOTIVO_WAIT
+[INFO] 20:32:52:572 kernel/(20541:20545): PID: 3, PC: 2, QUANTUM: 0
+[INFO] 20:32:52:572 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:572 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:572 kernel/(20541:20545): SI: 0, DI: 0, PC: 2
+[INFO] 20:32:52:572 kernel/(20541:20545): recurso: RA
+[INFO] 20:32:52:572 kernel/(20541:20545): recibir_contexto_ejecucion_motivo_wait(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 20:32:52:572 kernel/(20541:20545): Logueando PCBs en NEW
+[INFO] 20:32:52:572 kernel/(20541:20545): Logueando PCBs en READY
+[INFO] 20:32:52:572 kernel/(20541:20545): Logueando PCB en EXEC
+[INFO] 20:32:52:572 kernel/(20541:20545): PID: 3, PC: 2, QUANTUM: 0
+[INFO] 20:32:52:572 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:572 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:572 kernel/(20541:20545): SI: 0, DI: 0, PC: 2
+[INFO] 20:32:52:572 kernel/(20541:20545): Logueando PCBs en BLOCKED
+[INFO] 20:32:52:572 kernel/(20541:20545): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 20:32:52:572 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:572 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:573 kernel/(20541:20545): SI: 0, DI: 0, PC: 2
+[INFO] 20:32:52:573 kernel/(20541:20545): PID: 2, PC: 2, QUANTUM: 0
+[INFO] 20:32:52:573 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:52:573 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:52:573 kernel/(20541:20545): SI: 0, DI: 0, PC: 2
+[INFO] 20:32:52:573 kernel/(20541:20545): Logueando PCBs en EXIT
+[INFO] 20:32:52:573 kernel/(20541:20545): Instancias del recurso RA : 0
+[INFO] 20:32:52:573 kernel/(20541:20545): Instancias del recurso RA : -1
+[INFO] 20:32:52:573 kernel/(20541:20545): El pcb <3> entro en la cola de <BLOCKED>
+[INFO] 20:32:52:573 kernel/(20541:20545): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 20:32:53:356 kernel/(20541:20551): Path: 15.txt
+[INFO] 20:32:58:635 kernel/(20541:20551): Logueando PCBs en NEW
+[INFO] 20:32:58:635 kernel/(20541:20551): Logueando PCBs en READY
+[INFO] 20:32:58:635 kernel/(20541:20551): Logueando PCB en EXEC
+[INFO] 20:32:58:635 kernel/(20541:20551): No hay procesos en exec
+[INFO] 20:32:58:635 kernel/(20541:20551): Logueando PCBs en BLOCKED
+[INFO] 20:32:58:635 kernel/(20541:20551): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 20:32:58:635 kernel/(20541:20551): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:58:635 kernel/(20541:20551): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:58:635 kernel/(20541:20551): SI: 0, DI: 0, PC: 2
+[INFO] 20:32:58:635 kernel/(20541:20551): PID: 2, PC: 2, QUANTUM: 0
+[INFO] 20:32:58:635 kernel/(20541:20551): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:58:635 kernel/(20541:20551): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:58:635 kernel/(20541:20551): SI: 0, DI: 0, PC: 2
+[INFO] 20:32:58:635 kernel/(20541:20551): PID: 3, PC: 2, QUANTUM: 0
+[INFO] 20:32:58:635 kernel/(20541:20551): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:32:58:635 kernel/(20541:20551): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:32:58:635 kernel/(20541:20551): SI: 0, DI: 0, PC: 2
+[INFO] 20:32:58:635 kernel/(20541:20551): Logueando PCBs en EXIT
+[INFO] 20:32:58:635 kernel/(20541:20551): Path: 
+[INFO] 20:33:06:177 kernel/(20541:20551): Path: 
+
+
+EN ESTE PUNTO TIENEN QUE ESTAR LOS 3 PROCESOS EN BLOCKED
+
+Y POR CONSOLA TENES QUE FINALIZAR UNO PROCESO CUALQUIERA -> FINALIZAR_PROCESO 1
+
+SE AUMENTA UNA INSTANCIA DEL RECURSO QUE ESTABA ESPERANDO EL PROCESO
+[INFO] 20:33:06:177 kernel/(20541:20844): Instancias del recurso RA : -1
+[INFO] 20:33:06:177 kernel/(20541:20844): Instancias del recurso RA : 0  
+
+SE LIBERA EL RECURSO QUE TENIA TOMADO EL PROCESO
+[INFO] 20:33:06:177 kernel/(20541:20844): El pcb <3> entro en la cola de <READY>
+[INFO] 20:33:06:177 kernel/(20541:20844): Libero el recurso: <RA> - tomado por el proceso pid: <1>
+[INFO] 20:33:06:177 kernel/(20541:20844): Instancias del recurso RB : -1
+[INFO] 20:33:06:177 kernel/(20541:20844): Instancias del recurso RB : 0
+[INFO] 20:33:06:177 kernel/(20541:20844): El pcb <1> entro en la cola de <EXIT>
+[INFO] 20:33:06:177 kernel/(20541:20844): Se solicitó eliminar el proceso con PID: 1
+
+
+SIGUE LA EJECUCION CORRECAMENTE HASTA EL FINAL EJECUTANDO UNA INSTRUCCION CADA PROCESO
+[INFO] 20:33:06:177 kernel/(20541:20549): Entre por RR
+[INFO] 20:33:06:177 kernel/(20541:20549): El pcb <3> entro en la cola de <RUNNING>
+[INFO] 20:33:06:177 kernel/(20541:20549): El proceso 3 cambio su estado a RUNNING
+[INFO] 20:33:06:177 kernel/(20541:20549): PID: 3 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 20:33:06:177 kernel/(20541:20547): Finalice correctamente el PCB con pid: 1
+[INFO] 20:33:06:178 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: INTERRUPCION
+[INFO] 20:33:06:178 kernel/(20541:20545): PID: 3, PC: 2, QUANTUM: 0
+[INFO] 20:33:06:178 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:178 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:178 kernel/(20541:20545): SI: 0, DI: 0, PC: 2
+[INFO] 20:33:06:178 kernel/(20541:20545): Desaloje por fin de Quantum
+[INFO] 20:33:06:178 kernel/(20541:20545): El pcb <3> entro en la cola de <READY>
+[INFO] 20:33:06:178 kernel/(20541:20545): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 20:33:06:179 kernel/(20541:20550): Interrumpiendo pid: 3
+[INFO] 20:33:06:179 kernel/(20541:20549): Entre por RR
+[INFO] 20:33:06:179 kernel/(20541:20549): El pcb <3> entro en la cola de <RUNNING>
+[INFO] 20:33:06:179 kernel/(20541:20549): El proceso 3 cambio su estado a RUNNING
+[INFO] 20:33:06:179 kernel/(20541:20549): PID: 3 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 20:33:06:182 kernel/(20541:20550): Interrumpiendo pid: 3
+
+[INFO] 20:33:06:212 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: MOTIVO_SIGNAL
+[INFO] 20:33:06:212 kernel/(20541:20545): PID: 3, PC: 3, QUANTUM: 0
+[INFO] 20:33:06:212 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:212 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:212 kernel/(20541:20545): SI: 0, DI: 0, PC: 3
+[INFO] 20:33:06:212 kernel/(20541:20545): recurso: RC
+[INFO] 20:33:06:212 kernel/(20541:20545): recibir_contexto_ejecucion_motivo_signal(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 20:33:06:212 kernel/(20541:20545): Logueando PCBs en NEW
+[INFO] 20:33:06:212 kernel/(20541:20545): Logueando PCBs en READY
+[INFO] 20:33:06:212 kernel/(20541:20545): Logueando PCB en EXEC
+[INFO] 20:33:06:212 kernel/(20541:20545): PID: 3, PC: 3, QUANTUM: 0
+[INFO] 20:33:06:212 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:212 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:212 kernel/(20541:20545): SI: 0, DI: 0, PC: 3
+[INFO] 20:33:06:212 kernel/(20541:20545): Logueando PCBs en BLOCKED
+[INFO] 20:33:06:213 kernel/(20541:20545): PID: 2, PC: 2, QUANTUM: 0
+[INFO] 20:33:06:213 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:213 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:213 kernel/(20541:20545): SI: 0, DI: 0, PC: 2
+[INFO] 20:33:06:213 kernel/(20541:20545): Logueando PCBs en EXIT
+[INFO] 20:33:06:213 kernel/(20541:20545): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 20:33:06:213 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:213 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:213 kernel/(20541:20545): SI: 0, DI: 0, PC: 2
+[INFO] 20:33:06:213 kernel/(20541:20545): Instancias del recurso RC : -1
+[INFO] 20:33:06:213 kernel/(20541:20545): Instancias del recurso RC : 0
+[INFO] 20:33:06:213 kernel/(20541:20545): El pcb <2> entro en la cola de <READY>
+
+[INFO] 20:33:06:213 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: INTERRUPCION
+[INFO] 20:33:06:213 kernel/(20541:20545): PID: 3, PC: 3, QUANTUM: 0
+[INFO] 20:33:06:213 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:213 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:213 kernel/(20541:20545): SI: 0, DI: 0, PC: 3
+[INFO] 20:33:06:213 kernel/(20541:20545): Desaloje por fin de Quantum
+[INFO] 20:33:06:213 kernel/(20541:20545): El pcb <3> entro en la cola de <READY>
+[INFO] 20:33:06:213 kernel/(20541:20549): Entre por RR
+[INFO] 20:33:06:213 kernel/(20541:20549): El pcb <2> entro en la cola de <RUNNING>
+[INFO] 20:33:06:213 kernel/(20541:20549): El proceso 2 cambio su estado a RUNNING
+[INFO] 20:33:06:213 kernel/(20541:20549): PID: 2 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 20:33:06:214 kernel/(20541:20545): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 20:33:06:216 kernel/(20541:20550): Interrumpiendo pid: 2
+
+[INFO] 20:33:06:246 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: MOTIVO_SIGNAL
+[INFO] 20:33:06:246 kernel/(20541:20545): PID: 2, PC: 3, QUANTUM: 0
+[INFO] 20:33:06:246 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:246 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:246 kernel/(20541:20545): SI: 0, DI: 0, PC: 3
+[INFO] 20:33:06:246 kernel/(20541:20545): recurso: RB
+[INFO] 20:33:06:246 kernel/(20541:20545): recibir_contexto_ejecucion_motivo_signal(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 20:33:06:246 kernel/(20541:20545): Logueando PCBs en NEW
+[INFO] 20:33:06:246 kernel/(20541:20545): Logueando PCBs en READY
+[INFO] 20:33:06:246 kernel/(20541:20545): PID: 3, PC: 3, QUANTUM: 0
+[INFO] 20:33:06:247 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:247 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:247 kernel/(20541:20545): SI: 0, DI: 0, PC: 3
+[INFO] 20:33:06:247 kernel/(20541:20545): Logueando PCB en EXEC
+[INFO] 20:33:06:247 kernel/(20541:20545): PID: 2, PC: 3, QUANTUM: 0
+[INFO] 20:33:06:247 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:247 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:247 kernel/(20541:20545): SI: 0, DI: 0, PC: 3
+[INFO] 20:33:06:247 kernel/(20541:20545): Logueando PCBs en BLOCKED
+[INFO] 20:33:06:247 kernel/(20541:20545): Logueando PCBs en EXIT
+[INFO] 20:33:06:247 kernel/(20541:20545): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 20:33:06:247 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:247 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:247 kernel/(20541:20545): SI: 0, DI: 0, PC: 2
+[INFO] 20:33:06:247 kernel/(20541:20545): Instancias del recurso RB : 0
+[INFO] 20:33:06:247 kernel/(20541:20545): Instancias del recurso RB : 1
+
+[INFO] 20:33:06:247 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: INTERRUPCION
+[INFO] 20:33:06:247 kernel/(20541:20545): PID: 2, PC: 3, QUANTUM: 0
+[INFO] 20:33:06:247 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:247 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:247 kernel/(20541:20545): SI: 0, DI: 0, PC: 3
+[INFO] 20:33:06:247 kernel/(20541:20545): Desaloje por fin de Quantum
+[INFO] 20:33:06:247 kernel/(20541:20545): El pcb <2> entro en la cola de <READY>
+[INFO] 20:33:06:247 kernel/(20541:20549): Entre por RR
+[INFO] 20:33:06:247 kernel/(20541:20549): El pcb <3> entro en la cola de <RUNNING>
+[INFO] 20:33:06:247 kernel/(20541:20549): El proceso 3 cambio su estado a RUNNING
+[INFO] 20:33:06:247 kernel/(20541:20549): PID: 3 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 20:33:06:248 kernel/(20541:20545): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 20:33:06:250 kernel/(20541:20550): Interrumpiendo pid: 3
+
+[INFO] 20:33:06:289 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: MOTIVO_SIGNAL
+[INFO] 20:33:06:289 kernel/(20541:20545): PID: 3, PC: 4, QUANTUM: 0
+[INFO] 20:33:06:289 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:289 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:289 kernel/(20541:20545): SI: 0, DI: 0, PC: 4
+[INFO] 20:33:06:289 kernel/(20541:20545): recurso: RA
+[INFO] 20:33:06:289 kernel/(20541:20545): recibir_contexto_ejecucion_motivo_signal(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 20:33:06:289 kernel/(20541:20545): Logueando PCBs en NEW
+[INFO] 20:33:06:289 kernel/(20541:20545): Logueando PCBs en READY
+[INFO] 20:33:06:289 kernel/(20541:20545): PID: 2, PC: 3, QUANTUM: 0
+[INFO] 20:33:06:289 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:289 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:289 kernel/(20541:20545): SI: 0, DI: 0, PC: 3
+[INFO] 20:33:06:289 kernel/(20541:20545): Logueando PCB en EXEC
+[INFO] 20:33:06:289 kernel/(20541:20545): PID: 3, PC: 4, QUANTUM: 0
+[INFO] 20:33:06:289 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:289 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:289 kernel/(20541:20545): SI: 0, DI: 0, PC: 4
+[INFO] 20:33:06:289 kernel/(20541:20545): Logueando PCBs en BLOCKED
+[INFO] 20:33:06:289 kernel/(20541:20545): Logueando PCBs en EXIT
+[INFO] 20:33:06:289 kernel/(20541:20545): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 20:33:06:289 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:289 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:289 kernel/(20541:20545): SI: 0, DI: 0, PC: 2
+[INFO] 20:33:06:289 kernel/(20541:20545): Instancias del recurso RA : 0
+[INFO] 20:33:06:289 kernel/(20541:20545): Instancias del recurso RA : 1
+
+[INFO] 20:33:06:290 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: INTERRUPCION
+[INFO] 20:33:06:290 kernel/(20541:20545): PID: 3, PC: 4, QUANTUM: 0
+[INFO] 20:33:06:290 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:290 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:290 kernel/(20541:20545): SI: 0, DI: 0, PC: 4
+[INFO] 20:33:06:290 kernel/(20541:20545): Desaloje por fin de Quantum
+[INFO] 20:33:06:290 kernel/(20541:20545): El pcb <3> entro en la cola de <READY>
+[INFO] 20:33:06:290 kernel/(20541:20549): Entre por RR
+[INFO] 20:33:06:291 kernel/(20541:20549): El pcb <2> entro en la cola de <RUNNING>
+[INFO] 20:33:06:291 kernel/(20541:20549): El proceso 2 cambio su estado a RUNNING
+[INFO] 20:33:06:291 kernel/(20541:20549): PID: 2 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 20:33:06:291 kernel/(20541:20545): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 20:33:06:294 kernel/(20541:20550): Interrumpiendo pid: 2
+
+[INFO] 20:33:06:325 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: MOTIVO_SIGNAL
+[INFO] 20:33:06:325 kernel/(20541:20545): PID: 2, PC: 4, QUANTUM: 0
+[INFO] 20:33:06:325 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:325 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:325 kernel/(20541:20545): SI: 0, DI: 0, PC: 4
+[INFO] 20:33:06:325 kernel/(20541:20545): recurso: RC
+[INFO] 20:33:06:325 kernel/(20541:20545): recibir_contexto_ejecucion_motivo_signal(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 20:33:06:325 kernel/(20541:20545): Logueando PCBs en NEW
+[INFO] 20:33:06:325 kernel/(20541:20545): Logueando PCBs en READY
+[INFO] 20:33:06:325 kernel/(20541:20545): PID: 3, PC: 4, QUANTUM: 0
+[INFO] 20:33:06:325 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:325 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:325 kernel/(20541:20545): SI: 0, DI: 0, PC: 4
+[INFO] 20:33:06:325 kernel/(20541:20545): Logueando PCB en EXEC
+[INFO] 20:33:06:325 kernel/(20541:20545): PID: 2, PC: 4, QUANTUM: 0
+[INFO] 20:33:06:325 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:325 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:326 kernel/(20541:20545): SI: 0, DI: 0, PC: 4
+[INFO] 20:33:06:326 kernel/(20541:20545): Logueando PCBs en BLOCKED
+[INFO] 20:33:06:326 kernel/(20541:20545): Logueando PCBs en EXIT
+[INFO] 20:33:06:326 kernel/(20541:20545): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 20:33:06:326 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:326 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:326 kernel/(20541:20545): SI: 0, DI: 0, PC: 2
+[INFO] 20:33:06:326 kernel/(20541:20545): Instancias del recurso RC : 0
+[INFO] 20:33:06:326 kernel/(20541:20545): Instancias del recurso RC : 1
+
+[INFO] 20:33:06:326 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: INTERRUPCION
+[INFO] 20:33:06:326 kernel/(20541:20545): PID: 2, PC: 4, QUANTUM: 0
+[INFO] 20:33:06:326 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:326 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:326 kernel/(20541:20545): SI: 0, DI: 0, PC: 4
+[INFO] 20:33:06:326 kernel/(20541:20545): Desaloje por fin de Quantum
+[INFO] 20:33:06:326 kernel/(20541:20545): El pcb <2> entro en la cola de <READY>
+[INFO] 20:33:06:327 kernel/(20541:20549): Entre por RR
+[INFO] 20:33:06:327 kernel/(20541:20549): El pcb <3> entro en la cola de <RUNNING>
+[INFO] 20:33:06:327 kernel/(20541:20549): El proceso 3 cambio su estado a RUNNING
+[INFO] 20:33:06:327 kernel/(20541:20549): PID: 3 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 20:33:06:327 kernel/(20541:20545): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 20:33:06:329 kernel/(20541:20550): Interrumpiendo pid: 3
+
+[INFO] 20:33:06:367 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: TERMINAR_PROCESO
+[INFO] 20:33:06:367 kernel/(20541:20545): PID: 3, PC: 4, QUANTUM: 0
+[INFO] 20:33:06:367 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:06:367 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:06:367 kernel/(20541:20545): SI: 0, DI: 0, PC: 4
+[INFO] 20:33:06:367 kernel/(20541:20545): Desaloje para finalizar el proceso.
+[INFO] 20:33:06:368 kernel/(20541:20545): La cantidad de recursos_tomados por pid <3> ES: <0>
+[INFO] 20:33:06:368 kernel/(20541:20545): El pcb <3> entro en la cola de <EXIT>
+[INFO] 20:33:06:368 kernel/(20541:20545): Se solicitó eliminar el proceso con PID: 3
+[INFO] 20:33:06:368 kernel/(20541:20547): Finalice correctamente el PCB con pid: 3
+[INFO] 20:33:07:368 kernel/(20541:20549): Entre por RR
+[INFO] 20:33:07:368 kernel/(20541:20549): El pcb <2> entro en la cola de <RUNNING>
+[INFO] 20:33:07:368 kernel/(20541:20549): El proceso 2 cambio su estado a RUNNING
+[INFO] 20:33:07:368 kernel/(20541:20549): PID: 2 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 20:33:07:369 kernel/(20541:20545): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 20:33:07:373 kernel/(20541:20550): Interrumpiendo pid: 2
+
+[INFO] 20:33:07:401 kernel/(20541:20545): Recibi el contexto de ejecucion motivo: TERMINAR_PROCESO
+[INFO] 20:33:07:401 kernel/(20541:20545): PID: 2, PC: 4, QUANTUM: 0
+[INFO] 20:33:07:401 kernel/(20541:20545): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:07:401 kernel/(20541:20545): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:07:401 kernel/(20541:20545): SI: 0, DI: 0, PC: 4
+[INFO] 20:33:07:401 kernel/(20541:20545): Desaloje para finalizar el proceso.
+[INFO] 20:33:07:401 kernel/(20541:20545): La cantidad de recursos_tomados por pid <2> ES: <0>
+[INFO] 20:33:07:401 kernel/(20541:20545): El pcb <2> entro en la cola de <EXIT>
+[INFO] 20:33:07:401 kernel/(20541:20545): Se solicitó eliminar el proceso con PID: 2
+[INFO] 20:33:07:401 kernel/(20541:20547): Finalice correctamente el PCB con pid: 2
+[INFO] 20:33:08:402 kernel/(20541:20545): Le hice un post al semaforo de que el cpu esta libre
+
+
+ASI TIENE QUE QUEDAR AL FINAL SI HACES -> PROCESO_ESTADO
+(EL PRIMERO EN EXIT TIENE QUE SER EL QUE FINALIZASTE Y TIENE QUE TENER UN PC: 2)
+[INFO] 20:33:12:981 kernel/(20541:20551): Logueando PCBs en NEW
+[INFO] 20:33:12:981 kernel/(20541:20551): Logueando PCBs en READY
+[INFO] 20:33:12:981 kernel/(20541:20551): Logueando PCB en EXEC
+[INFO] 20:33:12:981 kernel/(20541:20551): No hay procesos en exec
+[INFO] 20:33:12:981 kernel/(20541:20551): Logueando PCBs en BLOCKED
+[INFO] 20:33:12:981 kernel/(20541:20551): Logueando PCBs en EXIT
+[INFO] 20:33:12:981 kernel/(20541:20551): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 20:33:12:981 kernel/(20541:20551): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:12:981 kernel/(20541:20551): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:12:981 kernel/(20541:20551): SI: 0, DI: 0, PC: 2
+[INFO] 20:33:12:981 kernel/(20541:20551): PID: 3, PC: 4, QUANTUM: 0
+[INFO] 20:33:12:981 kernel/(20541:20551): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:12:981 kernel/(20541:20551): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:12:981 kernel/(20541:20551): SI: 0, DI: 0, PC: 4
+[INFO] 20:33:12:981 kernel/(20541:20551): PID: 2, PC: 4, QUANTUM: 0
+[INFO] 20:33:12:981 kernel/(20541:20551): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 20:33:12:981 kernel/(20541:20551): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 20:33:12:981 kernel/(20541:20551): SI: 0, DI: 0, PC: 4
+
+
+
+
+
+
+
+
+
+
+// ----------------------------------------
+// - 15.txt ---------------------------
+// ----------------------------------------
+
+INICIAR_PROCESO deadlock1.txt
+INICIAR_PROCESO deadlock2.txt
+INICIAR_PROCESO deadlock3.txt
+INICIAR_PLANIFICACION
+
+
+// ----------------------------------------
+// - CONFIG KERNEL USADA -------------------------
+// ----------------------------------------
+
+PUERTO_ESCUCHA=8003
+IP_MEMORIA=127.0.0.1
+PUERTO_MEMORIA=8002
+IP_CPU=127.0.0.1
+PUERTO_CPU_DISPATCH=8006
+PUERTO_CPU_INTERRUPT=8007
+ALGORITMO_PLANIFICACION=RR
+QUANTUM=1
+RECURSOS=[RA,RB,RC]
+INSTANCIAS_RECURSOS=[1,1,1]
+GRADO_MULTIPROGRAMACION=3
+
+
+
+
+// ----------------------------------------
+// - CONFIG MEMORIA USADA -------------------------
+// ----------------------------------------
+PUERTO_ESCUCHA=8002
+TAM_MEMORIA=4096
+TAM_PAGINA=32
+PATH_INSTRUCCIONES=
+RETARDO_RESPUESTA=30
+
+
+// ----------------------------------------
+// - deadlock1.txt ---------------------------
+// ----------------------------------------
+WAIT RA
+WAIT RB
+SIGNAL RA
+SIGNAL RB
+EXIT
+
+// ----------------------------------------
+// - deadlock2.txt ---------------------------
+// ----------------------------------------
+
+WAIT RB
+WAIT RC
+SIGNAL RB
+SIGNAL RC
+EXIT
+
+
+// ----------------------------------------
+// - deadlock3.txt ---------------------------
+// ----------------------------------------
+
+WAIT RC
+WAIT RA
+SIGNAL RC
+SIGNAL RA
+EXIT

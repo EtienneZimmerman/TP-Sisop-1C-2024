@@ -1,0 +1,113 @@
+
+[INFO] 23:00:20:391 kernel/(30080:30080):  Algoritmo planificacion: RR
+ Grado multiprogramacion: 2
+ Ip CPU: 127.0.0.1
+ Puerto Dispatch: 8006
+ Puerto Interrupt: 8007
+ Puerto Escucha: 8003
+ Quantum: 1
+[INFO] 23:00:20:391 kernel/(30080:30080): Recursos_0: RA Instancias_recursos_0: 1
+[INFO] 23:00:20:391 kernel/(30080:30080): Recursos_1: RB Instancias_recursos_1: 2
+[INFO] 23:00:20:391 kernel/(30080:30080): Recursos_2: RC Instancias_recursos_2: 1
+[INFO] 23:00:20:391 kernel/(30080:30080): POR EJECUTAR RECURSOS INIT
+[INFO] 23:00:20:391 kernel/(30080:30080): Servidor kernel levantado
+[INFO] 23:00:20:393 kernel/(30080:30084): Conexion establecida con cpu dispatch
+[INFO] 23:00:20:393 kernel/(30080:30086): Conexion establecida con memoria
+[INFO] 23:00:20:394 kernel/(30080:30080): Inicialice en semaforo de interrupcion por quantum
+[INFO] 23:00:20:394 kernel/(30080:30080): Inicializando hilos planificadores...
+[INFO] 23:00:20:395 kernel/(30080:30080): Prendiendo el contador de Quantum
+[INFO] 23:00:20:395 kernel/(30080:30080): El quantum sacado de la config es:  1
+[INFO] 23:00:20:397 kernel/(30080:30085): Conexion establecida con cpu interrupt
+>Ingrese una instruccion: EJECUTAR_SCRIPT 10.txt
+Ejecutar script con path: 10.txt
+Iniciar proceso con path: rr3.txt
+[INFO] 23:05:12:306 kernel/(30080:30090): Path: rr3.txt
+[INFO] 23:05:12:306 kernel/(30080:30241): Ruta del archivo: rr3.txt
+[INFO] 23:05:12:307 kernel/(30080:30086): RECIBI FIN CREA PRO
+[INFO] 23:05:12:307 kernel/(30080:30086): recibi PID: 1
+[INFO] 23:05:12:307 kernel/(30080:30241): El pcb <1> entro en la cola de <NEW>
+[INFO] 23:05:12:307 kernel/(30080:30241): Proceso creado con PID: 1
+Iniciar planificación
+[INFO] 23:05:13:307 kernel/(30080:30090): Path: rr3.txt
+[INFO] 23:05:13:308 kernel/(30080:30243): El pcb <1> entro en la cola de <READY>
+[INFO] 23:05:13:308 kernel/(30080:30088): Entre por RR
+[INFO] 23:05:13:308 kernel/(30080:30088): El pcb <1> entro en la cola de <RUNNING>
+[INFO] 23:05:13:308 kernel/(30080:30088): El proceso 1 cambio su estado a RUNNING
+[INFO] 23:05:13:309 kernel/(30080:30088): PID: 1 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 23:05:13:312 kernel/(30080:30089): Interrumpiendo pid: 1
+[INFO] 23:05:13:337 kernel/(30080:30084): Recibi el contexto de ejecucion motivo: INTERRUPCION
+[INFO] 23:05:13:337 kernel/(30080:30084): PID: 1, PC: 1, QUANTUM: 0
+[INFO] 23:05:13:337 kernel/(30080:30084): AX: 1, BX: 0, CX: 0, DX: 0
+[INFO] 23:05:13:337 kernel/(30080:30084): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 23:05:13:337 kernel/(30080:30084): SI: 0, DI: 0, PC: 1
+[INFO] 23:05:13:337 kernel/(30080:30084): Desaloje por fin de Quantum
+[INFO] 23:05:13:337 kernel/(30080:30084): El pcb <1> entro en la cola de <READY>
+[INFO] 23:05:13:338 kernel/(30080:30084): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 23:05:13:338 kernel/(30080:30088): Entre por RR
+[INFO] 23:05:13:338 kernel/(30080:30088): El pcb <1> entro en la cola de <RUNNING>
+[INFO] 23:05:13:338 kernel/(30080:30088): El proceso 1 cambio su estado a RUNNING
+[INFO] 23:05:13:338 kernel/(30080:30088): PID: 1 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 23:05:13:342 kernel/(30080:30089): Interrumpiendo pid: 1
+[INFO] 23:05:13:365 kernel/(30080:30084): Recibi el contexto de ejecucion motivo: INTERRUPCION
+[INFO] 23:05:13:365 kernel/(30080:30084): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 23:05:13:365 kernel/(30080:30084): AX: 1, BX: 1, CX: 0, DX: 0
+[INFO] 23:05:13:365 kernel/(30080:30084): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 23:05:13:365 kernel/(30080:30084): SI: 0, DI: 0, PC: 2
+[INFO] 23:05:13:365 kernel/(30080:30084): Desaloje por fin de Quantum
+[INFO] 23:05:13:366 kernel/(30080:30084): El pcb <1> entro en la cola de <READY>
+[INFO] 23:05:13:366 kernel/(30080:30084): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 23:05:13:366 kernel/(30080:30088): Entre por RR
+[INFO] 23:05:13:367 kernel/(30080:30088): El pcb <1> entro en la cola de <RUNNING>
+[INFO] 23:05:13:367 kernel/(30080:30088): El proceso 1 cambio su estado a RUNNING
+[INFO] 23:05:13:367 kernel/(30080:30088): PID: 1 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 23:05:13:370 kernel/(30080:30089): Interrumpiendo pid: 1
+[INFO] 23:05:13:391 kernel/(30080:30084): Recibi el contexto de ejecucion motivo: MOTIVO_WAIT
+[INFO] 23:05:13:391 kernel/(30080:30084): PID: 1, PC: 3, QUANTUM: 0
+[INFO] 23:05:13:391 kernel/(30080:30084): AX: 1, BX: 1, CX: 0, DX: 0
+[INFO] 23:05:13:391 kernel/(30080:30084): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 23:05:13:391 kernel/(30080:30084): SI: 0, DI: 0, PC: 3
+[INFO] 23:05:13:391 kernel/(30080:30084): recurso: no_existe
+[INFO] 23:05:13:391 kernel/(30080:30084): PID: <1> - Finalizado porque el recurso <no_existe> no existe
+[INFO] 23:05:13:391 kernel/(30080:30084): El pcb <1> entro en la cola de <EXIT>
+[INFO] 23:05:13:391 kernel/(30080:30084): Se solicitó eliminar el proceso con PID: 1
+[INFO] 23:05:13:393 kernel/(30080:30086): Finalice correctamente el PCB con pid: 1
+[INFO] 23:05:14:309 kernel/(30080:30090): Path: 10.txt
+
+
+Estado del proceso
+[INFO] 23:07:01:467 kernel/(30080:30090): Logueando PCBs en NEW
+[INFO] 23:07:01:467 kernel/(30080:30090): Logueando PCBs en READY
+[INFO] 23:07:01:467 kernel/(30080:30090): Logueando PCB en EXEC
+[INFO] 23:07:01:467 kernel/(30080:30090): No hay procesos en exec
+[INFO] 23:07:01:467 kernel/(30080:30090): Logueando PCBs en BLOCKED
+[INFO] 23:07:01:467 kernel/(30080:30090): Logueando PCBs en EXIT
+[INFO] 23:07:01:467 kernel/(30080:30090): PID: 1, PC: 3, QUANTUM: 0
+[INFO] 23:07:01:467 kernel/(30080:30090): AX: 1, BX: 1, CX: 0, DX: 0
+[INFO] 23:07:01:467 kernel/(30080:30090): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 23:07:01:467 kernel/(30080:30090): SI: 0, DI: 0, PC: 3
+
+// ----------------------------------------
+// - CONFIG USADA KERNEL -------------------------
+// ----------------------------------------
+
+PUERTO_ESCUCHA=8003
+IP_MEMORIA=127.0.0.1
+PUERTO_MEMORIA=8002
+IP_CPU=127.0.0.1
+PUERTO_CPU_DISPATCH=8006
+PUERTO_CPU_INTERRUPT=8007
+ALGORITMO_PLANIFICACION=RR
+QUANTUM=1
+RECURSOS=[RA,RB,RC]
+INSTANCIAS_RECURSOS=[1,2,1]
+GRADO_MULTIPROGRAMACION=3
+
+
+// ----------------------------------------
+// - CONFIG USADA MEMORIA -------------------------
+// ----------------------------------------
+PUERTO_ESCUCHA=8002
+TAM_MEMORIA=4096
+TAM_PAGINA=32
+PATH_INSTRUCCIONES=
+RETARDO_RESPUESTA=20

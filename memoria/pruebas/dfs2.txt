@@ -1,0 +1,3 @@
+SET AX 20
+IO_FS_TRUNCATE Int4 hola.txt AX
+EXIT

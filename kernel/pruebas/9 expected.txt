@@ -1,0 +1,82 @@
+[INFO] 05:20:39:448 kernel/(69441:69441): Recursos_0: RA Instancias_recursos_0: 1
+[INFO] 05:20:39:449 kernel/(69441:69441): Recursos_1: RB Instancias_recursos_1: 2
+[INFO] 05:20:39:449 kernel/(69441:69441): Recursos_2: RC Instancias_recursos_2: 1
+[INFO] 05:20:39:449 kernel/(69441:69441): Servidor kernel levantado
+[INFO] 05:20:39:449 kernel/(69441:69457): Conexion establecida con cpu dispatch
+[INFO] 05:20:39:451 kernel/(69441:69459): Conexion establecida con memoria
+[INFO] 05:20:39:452 kernel/(69441:69458): Conexion establecida con cpu interrupt
+[INFO] 05:20:39:452 kernel/(69441:69441): Inicializando hilos planificadores...
+>Ingrese una instruccion[INFO] 05:20:43:038 kernel/(69441:69460): Me llego el mensaje Conectado a Kernel desde IO
+[INFO] 05:20:43:038 kernel/(69441:69460): SE CONECTO LA INTERFAZ DE NOMBRE: Int1
+Ejecutar script con path: 9.txt
+Iniciar proceso con path: gen.txt
+[INFO] 05:20:49:831 kernel/(69441:69708): El pcb entro en la cola de NEW
+[INFO] 05:20:49:831 kernel/(69441:69708): Proceso creado con PID: 1
+[INFO] 05:20:49:832 kernel/(69441:69459): RECIBI FIN CREA PRO
+[INFO] 05:20:49:832 kernel/(69441:69459): recibi PID: 1
+Iniciar planificación
+[INFO] 05:20:50:835 kernel/(69441:69709): El pcb entro en la cola de READY
+[INFO] 05:20:50:836 kernel/(69441:69461): Entre por FIFO
+[INFO] 05:20:50:836 kernel/(69441:69461): El pcb entro en la cola de RUNNING
+[INFO] 05:20:50:836 kernel/(69441:69461): El proceso 1 cambio su estado a RUNNING
+[INFO] 05:20:50:836 kernel/(69441:69461): PID: 1 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 05:20:50:845 kernel/(69441:69457): Recibi el contexto de ejecucion motivo: 4
+[INFO] 05:20:50:845 kernel/(69441:69457): PID: 1, PC: 1, QUANTUM: 0
+[INFO] 05:20:50:845 kernel/(69441:69457): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 05:20:50:845 kernel/(69441:69457): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 05:20:50:845 kernel/(69441:69457): SI: 0, DI: 0, PC: 1
+[INFO] 05:20:50:845 kernel/(69441:69457): Recibi el interfaz: Int1 y la udt: 20
+[INFO] 05:20:50:845 kernel/(69441:69457): El pcb entro en la cola de BLOCKED
+[INFO] 05:20:50:846 kernel/(69441:69457): por enviar peticion IO_GEN_SLEEP a la interfaz: Int1
+[INFO] 05:20:50:846 kernel/(69441:69590): me llego un error IO
+[INFO] 05:20:50:847 kernel/(69441:69590): me llego la interfaz: Int1, pid: 1 
+[INFO] 05:20:50:847 kernel/(69441:69590): El pcb entro en la cola de EXIT
+[INFO] 05:20:50:847 kernel/(69441:69590): Se solicitó eliminar el proceso con PID: 1
+[INFO] 05:20:50:847 kernel/(69441:69459): Finalice correctamente el PCB con pid: 1
+Estado del proceso
+[INFO] 05:20:51:836 kernel/(69441:69462): Logueando PCBs en NEW
+[INFO] 05:20:51:836 kernel/(69441:69462): Logueando PCBs en READY
+[INFO] 05:20:51:836 kernel/(69441:69462): Logueando PCB en EXEC
+[INFO] 05:20:51:836 kernel/(69441:69462): No hay procesos en exec
+[INFO] 05:20:51:836 kernel/(69441:69462): Logueando PCBs en BLOCKED
+[INFO] 05:20:51:836 kernel/(69441:69462): Logueando PCBs en EXIT
+[INFO] 05:20:51:836 kernel/(69441:69462): PID: 1, PC: 1, QUANTUM: 0
+[INFO] 05:20:51:837 kernel/(69441:69462): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 05:20:51:837 kernel/(69441:69462): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 05:20:51:837 kernel/(69441:69462): SI: 0, DI: 0, PC: 1
+Estado del proceso
+[INFO] 05:20:52:839 kernel/(69441:69462): Logueando PCBs en NEW
+[INFO] 05:20:52:839 kernel/(69441:69462): Logueando PCBs en READY
+[INFO] 05:20:52:839 kernel/(69441:69462): Logueando PCB en EXEC
+[INFO] 05:20:52:840 kernel/(69441:69462): No hay procesos en exec
+[INFO] 05:20:52:840 kernel/(69441:69462): Logueando PCBs en BLOCKED
+[INFO] 05:20:52:840 kernel/(69441:69462): Logueando PCBs en EXIT
+[INFO] 05:20:52:840 kernel/(69441:69462): PID: 1, PC: 1, QUANTUM: 0
+[INFO] 05:20:52:840 kernel/(69441:69462): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 05:20:52:840 kernel/(69441:69462): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 05:20:52:840 kernel/(69441:69462): SI: 0, DI: 0, PC: 1
+
+-- CONFIG KERNEL
+PUERTO_ESCUCHA=8003
+IP_MEMORIA=127.0.0.1
+PUERTO_MEMORIA=8002
+IP_CPU=127.0.0.1
+PUERTO_CPU_DISPATCH=8006
+PUERTO_CPU_INTERRUPT=8007
+ALGORITMO_PLANIFICACION=FIFO
+QUANTUM=2000
+RECURSOS=[RA,RB,RC]
+INSTANCIAS_RECURSOS=[1,2,1]
+GRADO_MULTIPROGRAMACION=2
+
+-- CONFIG IO:
+TIPO_INTERFAZ=NO_EXISTE // recorar cambiarla entre el 8 y 9
+TIEMPO_UNIDAD_TRABAJO=250
+IP_KERNEL=127.0.0.1
+PUERTO_KERNEL=8003
+IP_MEMORIA=127.0.0.1
+PUERTO_MEMORIA=8002
+PATH_BASE_DIALFS=/home/utnso/dialfs
+BLOCK_SIZE=64
+BLOCK_COUNT=1024
+

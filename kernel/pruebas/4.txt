@@ -1,0 +1,4 @@
+INICIAR_PROCESO /pruebas/rr1.txt
+INICIAR_PROCESO /pruebas/rr1.txt
+INICIAR_PROCESO /pruebas/rr1.txt
+INICIAR_PLANIFICACION

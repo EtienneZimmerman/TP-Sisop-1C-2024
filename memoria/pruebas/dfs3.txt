@@ -1,0 +1,2 @@
+IO_FS_DELETE Int4 hola.txt
+EXIT

@@ -1,0 +1,3 @@
+INICIAR_PROCESO /pruebas/gen.txt
+INICIAR_PROCESO /pruebas/gen.txt
+INICIAR_PLANIFICACION

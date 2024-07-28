@@ -1,0 +1,242 @@
+[INFO] 03:14:47:408 kernel/(84399:84399):  Algoritmo planificacion: RR
+ Grado multiprogramacion: 3
+ Ip CPU: 127.0.0.1
+ Puerto Dispatch: 8006
+ Puerto Interrupt: 8007
+ Puerto Escucha: 8003
+ Quantum: 1
+[INFO] 03:14:47:408 kernel/(84399:84399): Recursos_0: RA Instancias_recursos_0: 1
+[INFO] 03:14:47:408 kernel/(84399:84399): Recursos_1: RB Instancias_recursos_1: 2
+[INFO] 03:14:47:408 kernel/(84399:84399): Recursos_2: RC Instancias_recursos_2: 1
+[INFO] 03:14:47:408 kernel/(84399:84399): POR EJECUTAR RECURSOS INIT
+[INFO] 03:14:47:408 kernel/(84399:84399): Servidor kernel levantado
+[INFO] 03:14:47:410 kernel/(84399:84403): Conexion establecida con cpu dispatch
+[INFO] 03:14:47:412 kernel/(84399:84399): Inicialice en semaforo de interrupcion por quantum
+[INFO] 03:14:47:412 kernel/(84399:84399): Inicializando hilos planificadores...
+[INFO] 03:14:47:410 kernel/(84399:84404): Conexion establecida con cpu interrupt
+[INFO] 03:14:47:411 kernel/(84399:84405): Conexion establecida con memoria
+[INFO] 03:14:47:415 kernel/(84399:84399): Prendiendo el contador de Quantum
+[INFO] 03:14:47:415 kernel/(84399:84399): El quantum sacado de la config es:  1
+[INFO] 03:15:01:809 kernel/(84399:84409): Path: rr2.txt
+[INFO] 03:15:01:811 kernel/(84399:84507): Ruta del archivo: rr2.txt
+[INFO] 03:15:01:811 kernel/(84399:84507): El pcb <1> entro en la cola de <NEW>
+[INFO] 03:15:01:812 kernel/(84399:84507): Proceso creado con PID: 1
+[INFO] 03:15:01:812 kernel/(84399:84405): RECIBI FIN CREA PRO
+[INFO] 03:15:01:813 kernel/(84399:84405): recibi PID: 1
+[INFO] 03:15:02:811 kernel/(84399:84409): Path: rr2.txt
+[INFO] 03:15:02:811 kernel/(84399:84511): Ruta del archivo: rr2.txt
+[INFO] 03:15:02:812 kernel/(84399:84511): El pcb <2> entro en la cola de <NEW>
+[INFO] 03:15:03:813 kernel/(84399:84508): El pcb <1> entro en la cola de <READY>
+[INFO] 03:15:03:813 kernel/(84399:84407): El pcb <1> entro en la cola de <RUNNING>
+[INFO] 03:15:03:813 kernel/(84399:84407): El proceso 1 cambio su estado a RUNNING
+[INFO] 03:15:03:813 kernel/(84399:84407): PID: 1 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 03:15:03:813 kernel/(84399:84512): El pcb <2> entro en la cola de <READY>
+[INFO] 03:15:03:816 kernel/(84399:84408): Interrumpiendo pid: 1
+[INFO] 03:15:03:831 kernel/(84399:84403): Recibi el contexto de ejecucion motivo: INTERRUPCION
+[INFO] 03:15:03:831 kernel/(84399:84403): PID: 1, PC: 1, QUANTUM: 0
+[INFO] 03:15:03:831 kernel/(84399:84403): AX: 1, BX: 0, CX: 0, DX: 0
+[INFO] 03:15:03:831 kernel/(84399:84403): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 03:15:03:831 kernel/(84399:84403): SI: 0, DI: 0, PC: 1
+[INFO] 03:15:03:831 kernel/(84399:84403): Desaloje por fin de Quantum
+[INFO] 03:15:03:831 kernel/(84399:84403): El pcb <1> entro en la cola de <READY>
+[INFO] 03:15:03:831 kernel/(84399:84407): El pcb <2> entro en la cola de <RUNNING>
+[INFO] 03:15:03:831 kernel/(84399:84407): El proceso 2 cambio su estado a RUNNING
+[INFO] 03:15:03:831 kernel/(84399:84407): PID: 2 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 03:15:03:835 kernel/(84399:84408): Interrumpiendo pid: 2
+[INFO] 03:15:03:847 kernel/(84399:84403): Recibi el contexto de ejecucion motivo: INTERRUPCION
+[INFO] 03:15:03:847 kernel/(84399:84403): PID: 2, PC: 1, QUANTUM: 0
+[INFO] 03:15:03:847 kernel/(84399:84403): AX: 1, BX: 0, CX: 0, DX: 0
+[INFO] 03:15:03:847 kernel/(84399:84403): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 03:15:03:847 kernel/(84399:84403): SI: 0, DI: 0, PC: 1
+[INFO] 03:15:03:847 kernel/(84399:84403): Desaloje por fin de Quantum
+[INFO] 03:15:03:847 kernel/(84399:84403): El pcb <2> entro en la cola de <READY>
+[INFO] 03:15:03:848 kernel/(84399:84407): El pcb <1> entro en la cola de <RUNNING>
+[INFO] 03:15:03:848 kernel/(84399:84407): El proceso 1 cambio su estado a RUNNING
+[INFO] 03:15:03:848 kernel/(84399:84407): PID: 1 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 03:15:03:851 kernel/(84399:84408): Interrumpiendo pid: 1
+[INFO] 03:15:03:871 kernel/(84399:84403): Recibi el contexto de ejecucion motivo: INTERRUPCION
+[INFO] 03:15:03:871 kernel/(84399:84403): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 03:15:03:871 kernel/(84399:84403): AX: 1, BX: 1, CX: 0, DX: 0
+[INFO] 03:15:03:871 kernel/(84399:84403): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 03:15:03:871 kernel/(84399:84403): SI: 0, DI: 0, PC: 2
+[INFO] 03:15:03:871 kernel/(84399:84403): Desaloje por fin de Quantum
+[INFO] 03:15:03:871 kernel/(84399:84403): El pcb <1> entro en la cola de <READY>
+[INFO] 03:15:03:871 kernel/(84399:84407): El pcb <2> entro en la cola de <RUNNING>
+[INFO] 03:15:03:871 kernel/(84399:84407): El proceso 2 cambio su estado a RUNNING
+[INFO] 03:15:03:871 kernel/(84399:84407): PID: 2 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 03:15:03:874 kernel/(84399:84408): Interrumpiendo pid: 2
+[INFO] 03:15:03:896 kernel/(84399:84403): Recibi el contexto de ejecucion motivo: INTERRUPCION
+[INFO] 03:15:03:896 kernel/(84399:84403): PID: 2, PC: 2, QUANTUM: 0
+[INFO] 03:15:03:896 kernel/(84399:84403): AX: 1, BX: 1, CX: 0, DX: 0
+[INFO] 03:15:03:896 kernel/(84399:84403): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 03:15:03:896 kernel/(84399:84403): SI: 0, DI: 0, PC: 2
+[INFO] 03:15:03:896 kernel/(84399:84403): Desaloje por fin de Quantum
+[INFO] 03:15:03:897 kernel/(84399:84403): El pcb <2> entro en la cola de <READY>
+[INFO] 03:15:03:897 kernel/(84399:84407): El pcb <1> entro en la cola de <RUNNING>
+[INFO] 03:15:03:897 kernel/(84399:84407): El proceso 1 cambio su estado a RUNNING
+[INFO] 03:15:03:897 kernel/(84399:84407): PID: 1 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 03:15:03:900 kernel/(84399:84408): Interrumpiendo pid: 1
+[INFO] 03:15:03:917 kernel/(84399:84403): Recibi el contexto de ejecucion motivo: MOTIVO_WAIT
+[INFO] 03:15:03:917 kernel/(84399:84403): PID: 1, PC: 3, QUANTUM: 0
+[INFO] 03:15:03:917 kernel/(84399:84403): AX: 1, BX: 1, CX: 0, DX: 0
+[INFO] 03:15:03:917 kernel/(84399:84403): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 03:15:03:917 kernel/(84399:84403): SI: 0, DI: 0, PC: 3
+[INFO] 03:15:03:917 kernel/(84399:84403): recurso: RB
+[INFO] 03:15:03:917 kernel/(84399:84403): recibir_contexto_ejecucion_motivo_wait(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 03:15:03:917 kernel/(84399:84403): Logueando PCBs en NEW
+[INFO] 03:15:03:917 kernel/(84399:84403): Logueando PCBs en READY
+[INFO] 03:15:03:917 kernel/(84399:84403): PID: 2, PC: 2, QUANTUM: 0
+[INFO] 03:15:03:917 kernel/(84399:84403): AX: 1, BX: 1, CX: 0, DX: 0
+[INFO] 03:15:03:917 kernel/(84399:84403): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 03:15:03:918 kernel/(84399:84403): SI: 0, DI: 0, PC: 2
+[INFO] 03:15:03:918 kernel/(84399:84403): Logueando PCB en EXEC
+[INFO] 03:15:03:918 kernel/(84399:84403): PID: 1, PC: 3, QUANTUM: 0
+[INFO] 03:15:03:918 kernel/(84399:84403): AX: 1, BX: 1, CX: 0, DX: 0
+[INFO] 03:15:03:918 kernel/(84399:84403): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 03:15:03:918 kernel/(84399:84403): SI: 0, DI: 0, PC: 3
+[INFO] 03:15:03:918 kernel/(84399:84403): Logueando PCBs en BLOCKED
+[INFO] 03:15:03:918 kernel/(84399:84403): Logueando PCBs en EXIT
+[INFO] 03:15:03:918 kernel/(84399:84403): Instancias del recurso RB : 2
+[INFO] 03:15:03:918 kernel/(84399:84403): Instancias del recurso RB : 1
+[INFO] 03:15:03:918 kernel/(84399:84403): antes de agregar RB a la lista de recursos_tomados del proceso 1 tiene 0 elementos
+[INFO] 03:15:03:918 kernel/(84399:84403): despues de agregar RB a la lista de recursos_tomados del proceso 1 tiene 1 elementos
+[INFO] 03:15:03:919 kernel/(84399:84403): Recibi el contexto de ejecucion motivo: INTERRUPCION
+[INFO] 03:15:03:919 kernel/(84399:84403): PID: 1, PC: 3, QUANTUM: 0
+[INFO] 03:15:03:919 kernel/(84399:84403): AX: 1, BX: 1, CX: 0, DX: 0
+[INFO] 03:15:03:919 kernel/(84399:84403): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 03:15:03:919 kernel/(84399:84403): SI: 0, DI: 0, PC: 3
+[INFO] 03:15:03:919 kernel/(84399:84403): Desaloje por fin de Quantum
+[INFO] 03:15:03:919 kernel/(84399:84403): El pcb <1> entro en la cola de <READY>
+[INFO] 03:15:03:919 kernel/(84399:84407): El pcb <2> entro en la cola de <RUNNING>
+[INFO] 03:15:03:919 kernel/(84399:84407): El proceso 2 cambio su estado a RUNNING
+[INFO] 03:15:03:919 kernel/(84399:84407): PID: 2 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 03:15:03:923 kernel/(84399:84408): Interrumpiendo pid: 2
+[INFO] 03:15:03:943 kernel/(84399:84403): Recibi el contexto de ejecucion motivo: MOTIVO_WAIT
+[INFO] 03:15:03:943 kernel/(84399:84403): PID: 2, PC: 3, QUANTUM: 0
+[INFO] 03:15:03:943 kernel/(84399:84403): AX: 1, BX: 1, CX: 0, DX: 0
+[INFO] 03:15:03:943 kernel/(84399:84403): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 03:15:03:943 kernel/(84399:84403): SI: 0, DI: 0, PC: 3
+[INFO] 03:15:03:943 kernel/(84399:84403): recurso: RB
+[INFO] 03:15:03:943 kernel/(84399:84403): recibir_contexto_ejecucion_motivo_wait(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 03:15:03:944 kernel/(84399:84403): Logueando PCBs en NEW
+[INFO] 03:15:03:944 kernel/(84399:84403): Logueando PCBs en READY
+[INFO] 03:15:03:944 kernel/(84399:84403): PID: 1, PC: 3, QUANTUM: 0
+[INFO] 03:15:03:944 kernel/(84399:84403): AX: 1, BX: 1, CX: 0, DX: 0
+[INFO] 03:15:03:944 kernel/(84399:84403): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 03:15:03:944 kernel/(84399:84403): SI: 0, DI: 0, PC: 3
+[INFO] 03:15:03:944 kernel/(84399:84403): Logueando PCB en EXEC
+[INFO] 03:15:03:944 kernel/(84399:84403): PID: 2, PC: 3, QUANTUM: 0
+[INFO] 03:15:03:944 kernel/(84399:84403): AX: 1, BX: 1, CX: 0, DX: 0
+[INFO] 03:15:03:944 kernel/(84399:84403): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 03:15:03:944 kernel/(84399:84403): SI: 0, DI: 0, PC: 3
+[INFO] 03:15:03:944 kernel/(84399:84403): Logueando PCBs en BLOCKED
+[INFO] 03:15:03:944 kernel/(84399:84403): Logueando PCBs en EXIT
+[INFO] 03:15:03:944 kernel/(84399:84403): Instancias del recurso RB : 1
+[INFO] 03:15:03:944 kernel/(84399:84403): Instancias del recurso RB : 0
+[INFO] 03:15:03:944 kernel/(84399:84403): antes de agregar RB a la lista de recursos_tomados del proceso 2 tiene 0 elementos
+[INFO] 03:15:03:944 kernel/(84399:84403): despues de agregar RB a la lista de recursos_tomados del proceso 2 tiene 1 elementos
+[INFO] 03:15:03:946 kernel/(84399:84403): Recibi el contexto de ejecucion motivo: INTERRUPCION
+[INFO] 03:15:03:946 kernel/(84399:84403): PID: 2, PC: 3, QUANTUM: 0
+[INFO] 03:15:03:946 kernel/(84399:84403): AX: 1, BX: 1, CX: 0, DX: 0
+[INFO] 03:15:03:946 kernel/(84399:84403): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 03:15:03:946 kernel/(84399:84403): SI: 0, DI: 0, PC: 3
+[INFO] 03:15:03:946 kernel/(84399:84403): Desaloje por fin de Quantum
+[INFO] 03:15:03:946 kernel/(84399:84403): El pcb <2> entro en la cola de <READY>
+[INFO] 03:15:03:947 kernel/(84399:84407): El pcb <1> entro en la cola de <RUNNING>
+[INFO] 03:15:03:947 kernel/(84399:84407): El proceso 1 cambio su estado a RUNNING
+[INFO] 03:15:03:947 kernel/(84399:84407): PID: 1 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 03:15:03:953 kernel/(84399:84408): Interrumpiendo pid: 1
+[INFO] 03:15:03:973 kernel/(84399:84403): Recibi el contexto de ejecucion motivo: TERMINAR_PROCESO
+[INFO] 03:15:03:973 kernel/(84399:84403): PID: 1, PC: 3, QUANTUM: 0
+[INFO] 03:15:03:973 kernel/(84399:84403): AX: 1, BX: 1, CX: 0, DX: 0
+[INFO] 03:15:03:974 kernel/(84399:84403): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 03:15:03:974 kernel/(84399:84403): SI: 0, DI: 0, PC: 3
+[INFO] 03:15:03:974 kernel/(84399:84403): Desaloje para finalizar el proceso.
+[INFO] 03:15:03:974 kernel/(84399:84403): La cantidad de recursos_tomados por pid <1> ES: <1>
+[INFO] 03:15:03:974 kernel/(84399:84403): Instancias del recurso RB : 0
+[INFO] 03:15:03:974 kernel/(84399:84403): Instancias del recurso RB : 1
+[INFO] 03:15:03:974 kernel/(84399:84403): Libero el recurso: <RB> - tomado por el proceso pid: <1>
+[INFO] 03:15:03:974 kernel/(84399:84403): El pcb <1> entro en la cola de <EXIT>
+[INFO] 03:15:03:974 kernel/(84399:84403): Se solicitó eliminar el proceso con PID: 1
+[INFO] 03:15:03:974 kernel/(84399:84405): Finalice correctamente el PCB con pid: 1
+[INFO] 03:15:04:814 kernel/(84399:84409): Path: 6.txt
+[INFO] 03:15:04:975 kernel/(84399:84407): El pcb <2> entro en la cola de <RUNNING>
+[INFO] 03:15:04:975 kernel/(84399:84407): El proceso 2 cambio su estado a RUNNING
+[INFO] 03:15:04:975 kernel/(84399:84407): PID: 2 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 03:15:04:978 kernel/(84399:84408): Interrumpiendo pid: 2
+[INFO] 03:15:04:998 kernel/(84399:84403): Recibi el contexto de ejecucion motivo: TERMINAR_PROCESO
+[INFO] 03:15:04:998 kernel/(84399:84403): PID: 2, PC: 3, QUANTUM: 0
+[INFO] 03:15:04:998 kernel/(84399:84403): AX: 1, BX: 1, CX: 0, DX: 0
+[INFO] 03:15:04:998 kernel/(84399:84403): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 03:15:04:998 kernel/(84399:84403): SI: 0, DI: 0, PC: 3
+[INFO] 03:15:04:998 kernel/(84399:84403): Desaloje para finalizar el proceso.
+[INFO] 03:15:04:998 kernel/(84399:84403): La cantidad de recursos_tomados por pid <2> ES: <1>
+[INFO] 03:15:04:998 kernel/(84399:84403): Instancias del recurso RB : 1
+[INFO] 03:15:04:998 kernel/(84399:84403): Instancias del recurso RB : 2
+[INFO] 03:15:04:998 kernel/(84399:84403): Libero el recurso: <RB> - tomado por el proceso pid: <2>
+[INFO] 03:15:04:998 kernel/(84399:84403): El pcb <2> entro en la cola de <EXIT>
+[INFO] 03:15:04:998 kernel/(84399:84403): Se solicitó eliminar el proceso con PID: 2
+[INFO] 03:15:04:999 kernel/(84399:84405): Finalice correctamente el PCB con pid: 2
+
+// Aca lo importante es observar que las transiciones de los PCB ejecutando y que el PC sea de a 1. 
+// {Pid} -> {PC}
+//   1   ->   1
+//   2   ->   1
+//   1   ->   2
+//   2   ->   2
+//   1   ->   3
+//   2   ->   3
+// Esta secuencia se repite cuando finaliza los procesos.
+//   1   ->   3
+//   2   ->   3
+
+// ----------------------------------------
+// - CONFIG USADA KERNEL -------------------------
+// ----------------------------------------
+
+PUERTO_ESCUCHA=8003
+IP_MEMORIA=127.0.0.1
+PUERTO_MEMORIA=8002
+IP_CPU=127.0.0.1
+PUERTO_CPU_DISPATCH=8006
+PUERTO_CPU_INTERRUPT=8007
+ALGORITMO_PLANIFICACION=RR
+QUANTUM=1
+RECURSOS=[RA,RB,RC]
+INSTANCIAS_RECURSOS=[1,2,1]
+GRADO_MULTIPROGRAMACION=3
+
+
+// ----------------------------------------
+// - CONFIG USADA MEMORIA -------------------------
+// ----------------------------------------
+PUERTO_ESCUCHA=8002
+TAM_MEMORIA=4096
+TAM_PAGINA=32
+PATH_INSTRUCCIONES=
+RETARDO_RESPUESTA=20
+
+
+// con ayudita de chatGPT esto es lo que va sucediendo
+
+03:15:01:812: Creación del proceso 1 en estado NEW.
+03:15:02:812: Creación del proceso 2 en estado NEW.
+03:15:03:813: Proceso 1 cambia a estado READY.
+03:15:03:813: Proceso 1 entra en RUNNING.
+03:15:03:816: Proceso 1 es interrumpido por fin de quantum y vuelve a READY.
+03:15:03:813: Proceso 2 cambia a estado READY.
+03:15:03:831: Proceso 2 entra en RUNNING.
+03:15:03:835: Proceso 2 es interrumpido por fin de quantum y vuelve a READY.
+03:15:03:871: Proceso 1 es reanudado y entra en RUNNING.
+03:15:03:871: Proceso 1 es interrumpido nuevamente por fin de quantum y vuelve a READY.
+03:15:03:893: Proceso 2 es reanudado y entra en RUNNING.
+03:15:03:896: Proceso 2 es interrumpido nuevamente por fin de quantum y vuelve a READY.
+03:15:03:917: Proceso 1 es interrumpido y toma el recurso RB.
+03:15:03:917: Proceso 1 vuelve a READY.
+03:15:03:923: Proceso 2 es reanudado y entra en RUNNING.
+03:15:03:946: Proceso 2 es interrumpido y toma el recurso RB.
+03:15:03:946: Proceso 2 vuelve a READY.
+03:15:03:973: Proceso 1 finaliza y pasa a EXIT.
+03:15:03:917: Se libera el recurso RB tomado por el proceso 1.
+03:15:04:998: Proceso 2 finaliza y pasa a EXIT.
+03:15:03:946: Se libera el recurso RB tomado por el proceso 2.

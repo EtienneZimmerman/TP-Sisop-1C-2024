@@ -1,0 +1,4 @@
+INICIAR_PROCESO /pruebas/manejo_recursos1.txt
+INICIAR_PROCESO /pruebas/manejo_recursos2.txt
+INICIAR_PROCESO /pruebas/manejo_recursos3.txt
+INICIAR_PLANIFICACION

@@ -1,0 +1,468 @@
+[INFO] 19:20:14:628 kernel/(372895:372895):  Algoritmo planificacion: FIFO
+ Grado multiprogramacion: 3
+ Ip CPU: 127.0.0.1
+ Puerto Dispatch: 8006
+ Puerto Interrupt: 8007
+ Puerto Escucha: 8003
+ Quantum: 1000
+[INFO] 19:20:14:628 kernel/(372895:372895): Recursos_0: RA Instancias_recursos_0: 1
+[INFO] 19:20:14:628 kernel/(372895:372895): Recursos_1: RB Instancias_recursos_1: 2
+[INFO] 19:20:14:628 kernel/(372895:372895): Recursos_2: RC Instancias_recursos_2: 1
+[INFO] 19:20:14:628 kernel/(372895:372895): POR EJECUTAR RECURSOS INIT
+[INFO] 19:20:14:628 kernel/(372895:372895): Servidor kernel levantado
+[INFO] 19:20:14:630 kernel/(372895:372899): Conexion establecida con cpu dispatch
+[INFO] 19:20:14:630 kernel/(372895:372900): Conexion establecida con cpu interrupt
+[INFO] 19:20:14:630 kernel/(372895:372901): Conexion establecida con memoria
+[INFO] 19:20:14:631 kernel/(372895:372895): Inicializando hilos planificadores...
+[INFO] 19:20:21:946 kernel/(372895:372996): El pcb <1> entro en la cola de <NEW>
+[INFO] 19:20:21:947 kernel/(372895:372996): Proceso creado con PID: 1
+[INFO] 19:20:21:947 kernel/(372895:372901): RECIBI FIN CREA PRO
+[INFO] 19:20:21:947 kernel/(372895:372901): recibi PID: 1
+[INFO] 19:20:22:948 kernel/(372895:373001): El pcb <2> entro en la cola de <NEW>
+[INFO] 19:20:22:949 kernel/(372895:373001): Proceso creado con PID: 2
+[INFO] 19:20:22:950 kernel/(372895:372901): RECIBI FIN CREA PRO
+[INFO] 19:20:22:950 kernel/(372895:372901): recibi PID: 2
+[INFO] 19:20:23:950 kernel/(372895:373030): El pcb <3> entro en la cola de <NEW>
+[INFO] 19:20:23:950 kernel/(372895:373030): Proceso creado con PID: 3
+[INFO] 19:20:23:951 kernel/(372895:372901): RECIBI FIN CREA PRO
+[INFO] 19:20:23:951 kernel/(372895:372901): recibi PID: 3
+[INFO] 19:20:24:951 kernel/(372895:372997): El pcb <1> entro en la cola de <READY>
+[INFO] 19:20:24:952 kernel/(372895:372903): Entre por FIFO
+[INFO] 19:20:24:952 kernel/(372895:372903): El pcb <1> entro en la cola de <RUNNING>
+[INFO] 19:20:24:952 kernel/(372895:372903): PID: 1 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 19:20:24:954 kernel/(372895:373002): El pcb <2> entro en la cola de <READY>
+[INFO] 19:20:24:955 kernel/(372895:373031): El pcb <3> entro en la cola de <READY>
+
+[INFO] 19:20:24:957 kernel/(372895:372899): Recibi el contexto de ejecucion motivo: MOTIVO_WAIT
+[INFO] 19:20:24:957 kernel/(372895:372899): PID: 1, PC: 1, QUANTUM: 0
+[INFO] 19:20:24:957 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:24:957 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:24:957 kernel/(372895:372899): SI: 0, DI: 0, PC: 1
+[INFO] 19:20:24:957 kernel/(372895:372899): recurso: RA
+[INFO] 19:20:24:957 kernel/(372895:372899): recibir_contexto_ejecucion_motivo_wait(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 19:20:24:957 kernel/(372895:372899): Logueando PCBs en NEW
+[INFO] 19:20:24:957 kernel/(372895:372899): Logueando PCBs en READY
+[INFO] 19:20:24:957 kernel/(372895:372899): PID: 2, PC: 0, QUANTUM: 0
+[INFO] 19:20:24:957 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:24:957 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:24:957 kernel/(372895:372899): SI: 0, DI: 0, PC: 0
+[INFO] 19:20:24:957 kernel/(372895:372899): PID: 3, PC: 0, QUANTUM: 0
+[INFO] 19:20:24:957 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:24:957 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:24:957 kernel/(372895:372899): SI: 0, DI: 0, PC: 0
+[INFO] 19:20:24:957 kernel/(372895:372899): Logueando PCB en EXEC
+[INFO] 19:20:24:957 kernel/(372895:372899): PID: 1, PC: 1, QUANTUM: 0
+[INFO] 19:20:24:957 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:24:957 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:24:957 kernel/(372895:372899): SI: 0, DI: 0, PC: 1
+[INFO] 19:20:24:957 kernel/(372895:372899): Logueando PCBs en BLOCKED
+[INFO] 19:20:24:957 kernel/(372895:372899): Logueando PCBs en EXIT
+[INFO] 19:20:24:957 kernel/(372895:372899): Instancias del recurso RA : 1
+[INFO] 19:20:24:957 kernel/(372895:372899): Instancias del recurso RA : 0
+[INFO] 19:20:24:957 kernel/(372895:372899): antes de agregar RA a la lista de recursos_tomados del proceso 1 tiene 0 elementos
+[INFO] 19:20:24:957 kernel/(372895:372899): despues de agregar RA a la lista de recursos_tomados del proceso 1 tiene 1 elementos
+
+[INFO] 19:20:25:961 kernel/(372895:372899): Recibi el contexto de ejecucion motivo: MOTIVO_WAIT
+[INFO] 19:20:25:961 kernel/(372895:372899): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 19:20:25:961 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:25:961 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:25:961 kernel/(372895:372899): SI: 0, DI: 0, PC: 2
+[INFO] 19:20:25:961 kernel/(372895:372899): recurso: RA
+[INFO] 19:20:25:961 kernel/(372895:372899): recibir_contexto_ejecucion_motivo_wait(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 19:20:25:961 kernel/(372895:372899): Logueando PCBs en NEW
+[INFO] 19:20:25:961 kernel/(372895:372899): Logueando PCBs en READY
+[INFO] 19:20:25:961 kernel/(372895:372899): PID: 2, PC: 0, QUANTUM: 0
+[INFO] 19:20:25:962 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:25:962 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:25:962 kernel/(372895:372899): SI: 0, DI: 0, PC: 0
+[INFO] 19:20:25:962 kernel/(372895:372899): PID: 3, PC: 0, QUANTUM: 0
+[INFO] 19:20:25:962 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:25:962 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:25:962 kernel/(372895:372899): SI: 0, DI: 0, PC: 0
+[INFO] 19:20:25:962 kernel/(372895:372899): Logueando PCB en EXEC
+[INFO] 19:20:25:962 kernel/(372895:372899): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 19:20:25:962 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:25:962 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:25:962 kernel/(372895:372899): SI: 0, DI: 0, PC: 2
+[INFO] 19:20:25:962 kernel/(372895:372899): Logueando PCBs en BLOCKED
+[INFO] 19:20:25:962 kernel/(372895:372899): Logueando PCBs en EXIT
+[INFO] 19:20:25:962 kernel/(372895:372899): Instancias del recurso RA : 0
+[INFO] 19:20:25:962 kernel/(372895:372899): Instancias del recurso RA : -1
+[INFO] 19:20:25:962 kernel/(372895:372899): El pcb <1> entro en la cola de <BLOCKED>
+[INFO] 19:20:25:962 kernel/(372895:372899): Le hice un post al semaforo de que el cpu esta libre
+[INFO] 19:20:25:962 kernel/(372895:372903): Entre por FIFO
+[INFO] 19:20:25:962 kernel/(372895:372903): El pcb <2> entro en la cola de <RUNNING>
+[INFO] 19:20:25:962 kernel/(372895:372903): PID: 2 - Estado Anterior: READY - Estado Actual: RUNNING
+
+[INFO] 19:20:26:967 kernel/(372895:372899): Recibi el contexto de ejecucion motivo: MOTIVO_SIGNAL
+[INFO] 19:20:26:967 kernel/(372895:372899): PID: 2, PC: 1, QUANTUM: 0
+[INFO] 19:20:26:967 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:26:967 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:26:967 kernel/(372895:372899): SI: 0, DI: 0, PC: 1
+[INFO] 19:20:26:967 kernel/(372895:372899): recurso: RA
+[INFO] 19:20:26:967 kernel/(372895:372899): recibir_contexto_ejecucion_motivo_signal(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 19:20:26:967 kernel/(372895:372899): Logueando PCBs en NEW
+[INFO] 19:20:26:967 kernel/(372895:372899): Logueando PCBs en READY
+[INFO] 19:20:26:967 kernel/(372895:372899): PID: 3, PC: 0, QUANTUM: 0
+[INFO] 19:20:26:967 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:26:967 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:26:967 kernel/(372895:372899): SI: 0, DI: 0, PC: 0
+[INFO] 19:20:26:967 kernel/(372895:372899): Logueando PCB en EXEC
+[INFO] 19:20:26:967 kernel/(372895:372899): PID: 2, PC: 1, QUANTUM: 0
+[INFO] 19:20:26:967 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:26:967 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:26:967 kernel/(372895:372899): SI: 0, DI: 0, PC: 1
+[INFO] 19:20:26:967 kernel/(372895:372899): Logueando PCBs en BLOCKED
+[INFO] 19:20:26:967 kernel/(372895:372899): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 19:20:26:967 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:26:967 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:26:967 kernel/(372895:372899): SI: 0, DI: 0, PC: 2
+[INFO] 19:20:26:967 kernel/(372895:372899): Logueando PCBs en EXIT
+[INFO] 19:20:26:967 kernel/(372895:372899): Instancias del recurso RA : -1
+[INFO] 19:20:26:967 kernel/(372895:372899): Instancias del recurso RA : 0
+[INFO] 19:20:26:967 kernel/(372895:372899): El pcb <1> entro en la cola de <READY>
+
+[INFO] 19:20:27:969 kernel/(372895:372899): Recibi el contexto de ejecucion motivo: MOTIVO_SIGNAL
+[INFO] 19:20:27:969 kernel/(372895:372899): PID: 2, PC: 2, QUANTUM: 0
+[INFO] 19:20:27:969 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:27:969 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:27:969 kernel/(372895:372899): SI: 0, DI: 0, PC: 2
+[INFO] 19:20:27:969 kernel/(372895:372899): recurso: RA
+[INFO] 19:20:27:969 kernel/(372895:372899): recibir_contexto_ejecucion_motivo_signal(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 19:20:27:969 kernel/(372895:372899): Logueando PCBs en NEW
+[INFO] 19:20:27:969 kernel/(372895:372899): Logueando PCBs en READY
+[INFO] 19:20:27:969 kernel/(372895:372899): PID: 3, PC: 0, QUANTUM: 0
+[INFO] 19:20:27:969 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:27:969 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:27:969 kernel/(372895:372899): SI: 0, DI: 0, PC: 0
+[INFO] 19:20:27:969 kernel/(372895:372899): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 19:20:27:969 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:27:969 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:27:969 kernel/(372895:372899): SI: 0, DI: 0, PC: 2
+[INFO] 19:20:27:969 kernel/(372895:372899): Logueando PCB en EXEC
+[INFO] 19:20:27:969 kernel/(372895:372899): PID: 2, PC: 2, QUANTUM: 0
+[INFO] 19:20:27:969 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:27:969 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:27:969 kernel/(372895:372899): SI: 0, DI: 0, PC: 2
+[INFO] 19:20:27:969 kernel/(372895:372899): Logueando PCBs en BLOCKED
+[INFO] 19:20:27:969 kernel/(372895:372899): Logueando PCBs en EXIT
+[INFO] 19:20:27:969 kernel/(372895:372899): Instancias del recurso RA : 0
+[INFO] 19:20:27:969 kernel/(372895:372899): Instancias del recurso RA : 1
+
+[INFO] 19:20:28:981 kernel/(372895:372899): Recibi el contexto de ejecucion motivo: MOTIVO_WAIT
+[INFO] 19:20:28:981 kernel/(372895:372899): PID: 2, PC: 3, QUANTUM: 0
+[INFO] 19:20:28:981 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:28:981 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:28:981 kernel/(372895:372899): SI: 0, DI: 0, PC: 3
+[INFO] 19:20:28:981 kernel/(372895:372899): recurso: RB
+[INFO] 19:20:28:981 kernel/(372895:372899): recibir_contexto_ejecucion_motivo_wait(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 19:20:28:981 kernel/(372895:372899): Logueando PCBs en NEW
+[INFO] 19:20:28:981 kernel/(372895:372899): Logueando PCBs en READY
+[INFO] 19:20:28:981 kernel/(372895:372899): PID: 3, PC: 0, QUANTUM: 0
+[INFO] 19:20:28:981 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:28:981 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:28:981 kernel/(372895:372899): SI: 0, DI: 0, PC: 0
+[INFO] 19:20:28:981 kernel/(372895:372899): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 19:20:28:981 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:28:981 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:28:981 kernel/(372895:372899): SI: 0, DI: 0, PC: 2
+[INFO] 19:20:28:981 kernel/(372895:372899): Logueando PCB en EXEC
+[INFO] 19:20:28:981 kernel/(372895:372899): PID: 2, PC: 3, QUANTUM: 0
+[INFO] 19:20:28:981 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:28:981 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:28:981 kernel/(372895:372899): SI: 0, DI: 0, PC: 3
+[INFO] 19:20:28:981 kernel/(372895:372899): Logueando PCBs en BLOCKED
+[INFO] 19:20:28:981 kernel/(372895:372899): Logueando PCBs en EXIT
+[INFO] 19:20:28:981 kernel/(372895:372899): Instancias del recurso RB : 2
+[INFO] 19:20:28:981 kernel/(372895:372899): Instancias del recurso RB : 1
+[INFO] 19:20:28:981 kernel/(372895:372899): antes de agregar RB a la lista de recursos_tomados del proceso 2 tiene 0 elementos
+[INFO] 19:20:28:981 kernel/(372895:372899): despues de agregar RB a la lista de recursos_tomados del proceso 2 tiene 1 elementos
+
+[INFO] 19:20:29:994 kernel/(372895:372899): Recibi el contexto de ejecucion motivo: MOTIVO_WAIT
+[INFO] 19:20:29:994 kernel/(372895:372899): PID: 2, PC: 4, QUANTUM: 0
+[INFO] 19:20:29:994 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:29:994 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:29:994 kernel/(372895:372899): SI: 0, DI: 0, PC: 4
+[INFO] 19:20:29:994 kernel/(372895:372899): recurso: RB
+[INFO] 19:20:29:995 kernel/(372895:372899): recibir_contexto_ejecucion_motivo_wait(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 19:20:29:995 kernel/(372895:372899): Logueando PCBs en NEW
+[INFO] 19:20:29:996 kernel/(372895:372899): Logueando PCBs en READY
+[INFO] 19:20:29:996 kernel/(372895:372899): PID: 3, PC: 0, QUANTUM: 0
+[INFO] 19:20:29:996 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:29:996 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:29:996 kernel/(372895:372899): SI: 0, DI: 0, PC: 0
+[INFO] 19:20:29:996 kernel/(372895:372899): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 19:20:29:996 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:29:996 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:29:996 kernel/(372895:372899): SI: 0, DI: 0, PC: 2
+[INFO] 19:20:29:996 kernel/(372895:372899): Logueando PCB en EXEC
+[INFO] 19:20:29:996 kernel/(372895:372899): PID: 2, PC: 4, QUANTUM: 0
+[INFO] 19:20:29:996 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:29:996 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:29:996 kernel/(372895:372899): SI: 0, DI: 0, PC: 4
+[INFO] 19:20:29:996 kernel/(372895:372899): Logueando PCBs en BLOCKED
+[INFO] 19:20:29:996 kernel/(372895:372899): Logueando PCBs en EXIT
+[INFO] 19:20:29:996 kernel/(372895:372899): Instancias del recurso RB : 1
+[INFO] 19:20:29:996 kernel/(372895:372899): Instancias del recurso RB : 0
+[INFO] 19:20:29:996 kernel/(372895:372899): antes de agregar RB a la lista de recursos_tomados del proceso 2 tiene 1 elementos
+[INFO] 19:20:29:996 kernel/(372895:372899): despues de agregar RB a la lista de recursos_tomados del proceso 2 tiene 2 elementos
+
+[INFO] 19:20:30:996 kernel/(372895:372899): Recibi el contexto de ejecucion motivo: MOTIVO_SIGNAL
+[INFO] 19:20:30:996 kernel/(372895:372899): PID: 2, PC: 5, QUANTUM: 0
+[INFO] 19:20:30:996 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:30:996 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:30:996 kernel/(372895:372899): SI: 0, DI: 0, PC: 5
+[INFO] 19:20:30:996 kernel/(372895:372899): recurso: RB
+[INFO] 19:20:30:996 kernel/(372895:372899): recibir_contexto_ejecucion_motivo_signal(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 19:20:30:996 kernel/(372895:372899): Logueando PCBs en NEW
+[INFO] 19:20:30:996 kernel/(372895:372899): Logueando PCBs en READY
+[INFO] 19:20:30:996 kernel/(372895:372899): PID: 3, PC: 0, QUANTUM: 0
+[INFO] 19:20:30:996 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:30:996 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:30:996 kernel/(372895:372899): SI: 0, DI: 0, PC: 0
+[INFO] 19:20:30:996 kernel/(372895:372899): PID: 1, PC: 2, QUANTUM: 0
+[INFO] 19:20:30:996 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:30:996 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:30:996 kernel/(372895:372899): SI: 0, DI: 0, PC: 2
+[INFO] 19:20:30:996 kernel/(372895:372899): Logueando PCB en EXEC
+[INFO] 19:20:30:996 kernel/(372895:372899): PID: 2, PC: 5, QUANTUM: 0
+[INFO] 19:20:30:996 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:30:997 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:30:997 kernel/(372895:372899): SI: 0, DI: 0, PC: 5
+[INFO] 19:20:30:997 kernel/(372895:372899): Logueando PCBs en BLOCKED
+[INFO] 19:20:30:997 kernel/(372895:372899): Logueando PCBs en EXIT
+[INFO] 19:20:30:997 kernel/(372895:372899): Instancias del recurso RB : 0
+[INFO] 19:20:30:997 kernel/(372895:372899): Instancias del recurso RB : 1
+
+[INFO] 19:20:32:000 kernel/(372895:372899): Recibi el contexto de ejecucion motivo: TERMINAR_PROCESO
+[INFO] 19:20:32:000 kernel/(372895:372899): PID: 2, PC: 5, QUANTUM: 0
+[INFO] 19:20:32:000 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:32:000 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:32:000 kernel/(372895:372899): SI: 0, DI: 0, PC: 5
+[INFO] 19:20:32:000 kernel/(372895:372899): Desaloje para finalizar el proceso.
+[INFO] 19:20:32:000 kernel/(372895:372899): La cantidad de recursos_tomados por pid <2> ES: <1>
+[INFO] 19:20:32:000 kernel/(372895:372899): Instancias del recurso RB : 1
+[INFO] 19:20:32:001 kernel/(372895:372899): Instancias del recurso RB : 2
+[INFO] 19:20:32:001 kernel/(372895:372899): Libero el recurso: <RB> - tomado por el proceso pid: <2>
+[INFO] 19:20:32:001 kernel/(372895:372899): El pcb <2> entro en la cola de <EXIT>
+[INFO] 19:20:32:001 kernel/(372895:372899): Se solicitó eliminar el proceso con PID: 2
+[INFO] 19:20:32:001 kernel/(372895:372901): Finalice correctamente el PCB con pid: 2
+[INFO] 19:20:33:001 kernel/(372895:372903): Entre por FIFO
+[INFO] 19:20:33:001 kernel/(372895:372903): El pcb <3> entro en la cola de <RUNNING>
+[INFO] 19:20:33:001 kernel/(372895:372903): PID: 3 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 19:20:33:001 kernel/(372895:372899): Le hice un post al semaforo de que el cpu esta libre
+
+[INFO] 19:20:33:004 kernel/(372895:372899): Recibi el contexto de ejecucion motivo: MOTIVO_SIGNAL
+[INFO] 19:20:33:004 kernel/(372895:372899): PID: 3, PC: 1, QUANTUM: 0
+[INFO] 19:20:33:004 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:33:004 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:33:004 kernel/(372895:372899): SI: 0, DI: 0, PC: 1
+[INFO] 19:20:33:004 kernel/(372895:372899): recurso: NOT_RECURSO
+[INFO] 19:20:33:004 kernel/(372895:372899): PID: <3> - Finalizado porque el recurso <NOT_RECURSO> no existe
+[INFO] 19:20:33:004 kernel/(372895:372899): SE ENVIA INTERRUPCION A CPU
+[INFO] 19:20:33:004 kernel/(372895:372899): Interrumpiendo pid: 3
+
+[INFO] 19:20:33:005 kernel/(372895:372899): Recibi el contexto de ejecucion motivo: TERMINAR_PROCESO
+[INFO] 19:20:33:005 kernel/(372895:372899): PID: 3, PC: 1, QUANTUM: 0
+[INFO] 19:20:33:005 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:33:005 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:33:005 kernel/(372895:372899): SI: 0, DI: 0, PC: 1
+[INFO] 19:20:33:005 kernel/(372895:372899): Desaloje para finalizar el proceso.
+[INFO] 19:20:33:005 kernel/(372895:372899): La cantidad de recursos_tomados por pid <3> ES: <0>
+[INFO] 19:20:33:005 kernel/(372895:372899): El pcb <3> entro en la cola de <EXIT>
+[INFO] 19:20:33:005 kernel/(372895:372899): Se solicitó eliminar el proceso con PID: 3
+[INFO] 19:20:33:005 kernel/(372895:372901): Finalice correctamente el PCB con pid: 3
+[INFO] 19:20:34:006 kernel/(372895:372903): Entre por FIFO
+[INFO] 19:20:34:006 kernel/(372895:372903): El pcb <1> entro en la cola de <RUNNING>
+[INFO] 19:20:34:006 kernel/(372895:372903): PID: 1 - Estado Anterior: READY - Estado Actual: RUNNING
+[INFO] 19:20:34:006 kernel/(372895:372899): Le hice un post al semaforo de que el cpu esta libre
+
+[INFO] 19:20:34:010 kernel/(372895:372899): Recibi el contexto de ejecucion motivo: MOTIVO_SIGNAL
+[INFO] 19:20:34:010 kernel/(372895:372899): PID: 1, PC: 3, QUANTUM: 0
+[INFO] 19:20:34:010 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:34:010 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:34:010 kernel/(372895:372899): SI: 0, DI: 0, PC: 3
+[INFO] 19:20:34:010 kernel/(372895:372899): recurso: RA
+[INFO] 19:20:34:010 kernel/(372895:372899): recibir_contexto_ejecucion_motivo_signal(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 19:20:34:010 kernel/(372895:372899): Logueando PCBs en NEW
+[INFO] 19:20:34:010 kernel/(372895:372899): Logueando PCBs en READY
+[INFO] 19:20:34:010 kernel/(372895:372899): Logueando PCB en EXEC
+[INFO] 19:20:34:010 kernel/(372895:372899): PID: 1, PC: 3, QUANTUM: 0
+[INFO] 19:20:34:010 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:34:010 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:34:010 kernel/(372895:372899): SI: 0, DI: 0, PC: 3
+[INFO] 19:20:34:010 kernel/(372895:372899): Logueando PCBs en BLOCKED
+[INFO] 19:20:34:010 kernel/(372895:372899): Logueando PCBs en EXIT
+[INFO] 19:20:34:010 kernel/(372895:372899): PID: 2, PC: 5, QUANTUM: 0
+[INFO] 19:20:34:010 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:34:010 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:34:010 kernel/(372895:372899): SI: 0, DI: 0, PC: 5
+[INFO] 19:20:34:010 kernel/(372895:372899): PID: 3, PC: 1, QUANTUM: 0
+[INFO] 19:20:34:010 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:34:010 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:34:010 kernel/(372895:372899): SI: 0, DI: 0, PC: 1
+[INFO] 19:20:34:010 kernel/(372895:372899): Instancias del recurso RA : 1
+[INFO] 19:20:34:010 kernel/(372895:372899): Instancias del recurso RA : 2
+
+[INFO] 19:20:35:015 kernel/(372895:372899): Recibi el contexto de ejecucion motivo: MOTIVO_SIGNAL
+[INFO] 19:20:35:016 kernel/(372895:372899): PID: 1, PC: 4, QUANTUM: 0
+[INFO] 19:20:35:016 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:35:016 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:35:016 kernel/(372895:372899): SI: 0, DI: 0, PC: 4
+[INFO] 19:20:35:016 kernel/(372895:372899): recurso: RB
+[INFO] 19:20:35:016 kernel/(372895:372899): recibir_contexto_ejecucion_motivo_signal(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 19:20:35:016 kernel/(372895:372899): Logueando PCBs en NEW
+[INFO] 19:20:35:016 kernel/(372895:372899): Logueando PCBs en READY
+[INFO] 19:20:35:016 kernel/(372895:372899): Logueando PCB en EXEC
+[INFO] 19:20:35:016 kernel/(372895:372899): PID: 1, PC: 4, QUANTUM: 0
+[INFO] 19:20:35:016 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:35:016 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:35:016 kernel/(372895:372899): SI: 0, DI: 0, PC: 4
+[INFO] 19:20:35:016 kernel/(372895:372899): Logueando PCBs en BLOCKED
+[INFO] 19:20:35:016 kernel/(372895:372899): Logueando PCBs en EXIT
+[INFO] 19:20:35:016 kernel/(372895:372899): PID: 2, PC: 5, QUANTUM: 0
+[INFO] 19:20:35:016 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:35:016 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:35:016 kernel/(372895:372899): SI: 0, DI: 0, PC: 5
+[INFO] 19:20:35:016 kernel/(372895:372899): PID: 3, PC: 1, QUANTUM: 0
+[INFO] 19:20:35:016 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:35:016 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:35:016 kernel/(372895:372899): SI: 0, DI: 0, PC: 1
+[INFO] 19:20:35:016 kernel/(372895:372899): Instancias del recurso RB : 2
+[INFO] 19:20:35:016 kernel/(372895:372899): Instancias del recurso RB : 3
+
+[INFO] 19:20:36:019 kernel/(372895:372899): Recibi el contexto de ejecucion motivo: MOTIVO_WAIT
+[INFO] 19:20:36:019 kernel/(372895:372899): PID: 1, PC: 5, QUANTUM: 0
+[INFO] 19:20:36:019 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:36:019 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:36:019 kernel/(372895:372899): SI: 0, DI: 0, PC: 5
+[INFO] 19:20:36:019 kernel/(372895:372899): recurso: RB
+[INFO] 19:20:36:019 kernel/(372895:372899): recibir_contexto_ejecucion_motivo_wait(t_pcb *aux_pcb_ejecutado, char * recurso)
+[INFO] 19:20:36:019 kernel/(372895:372899): Logueando PCBs en NEW
+[INFO] 19:20:36:019 kernel/(372895:372899): Logueando PCBs en READY
+[INFO] 19:20:36:019 kernel/(372895:372899): Logueando PCB en EXEC
+[INFO] 19:20:36:019 kernel/(372895:372899): PID: 1, PC: 5, QUANTUM: 0
+[INFO] 19:20:36:019 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:36:019 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:36:019 kernel/(372895:372899): SI: 0, DI: 0, PC: 5
+[INFO] 19:20:36:019 kernel/(372895:372899): Logueando PCBs en BLOCKED
+[INFO] 19:20:36:019 kernel/(372895:372899): Logueando PCBs en EXIT
+[INFO] 19:20:36:019 kernel/(372895:372899): PID: 2, PC: 5, QUANTUM: 0
+[INFO] 19:20:36:019 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:36:019 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:36:019 kernel/(372895:372899): SI: 0, DI: 0, PC: 5
+[INFO] 19:20:36:019 kernel/(372895:372899): PID: 3, PC: 1, QUANTUM: 0
+[INFO] 19:20:36:019 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:36:019 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:36:019 kernel/(372895:372899): SI: 0, DI: 0, PC: 1
+[INFO] 19:20:36:019 kernel/(372895:372899): Instancias del recurso RB : 3
+[INFO] 19:20:36:019 kernel/(372895:372899): Instancias del recurso RB : 2
+[INFO] 19:20:36:019 kernel/(372895:372899): antes de agregar RB a la lista de recursos_tomados del proceso 1 tiene 1 elementos
+[INFO] 19:20:36:019 kernel/(372895:372899): despues de agregar RB a la lista de recursos_tomados del proceso 1 tiene 2 elementos
+
+[INFO] 19:20:37:028 kernel/(372895:372899): Recibi el contexto de ejecucion motivo: TERMINAR_PROCESO
+[INFO] 19:20:37:028 kernel/(372895:372899): PID: 1, PC: 5, QUANTUM: 0
+[INFO] 19:20:37:028 kernel/(372895:372899): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:37:028 kernel/(372895:372899): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:37:028 kernel/(372895:372899): SI: 0, DI: 0, PC: 5
+[INFO] 19:20:37:028 kernel/(372895:372899): Desaloje para finalizar el proceso.
+[INFO] 19:20:37:028 kernel/(372895:372899): La cantidad de recursos_tomados por pid <1> ES: <2>
+[INFO] 19:20:37:028 kernel/(372895:372899): Instancias del recurso RA : 2
+[INFO] 19:20:37:028 kernel/(372895:372899): Instancias del recurso RA : 3
+[INFO] 19:20:37:028 kernel/(372895:372899): Libero el recurso: <RA> - tomado por el proceso pid: <1>
+[INFO] 19:20:37:028 kernel/(372895:372899): Instancias del recurso RB : 2
+[INFO] 19:20:37:028 kernel/(372895:372899): Instancias del recurso RB : 3
+[INFO] 19:20:37:028 kernel/(372895:372899): Libero el recurso: <RB> - tomado por el proceso pid: <1>
+[INFO] 19:20:37:028 kernel/(372895:372899): El pcb <1> entro en la cola de <EXIT>
+[INFO] 19:20:37:028 kernel/(372895:372899): Se solicitó eliminar el proceso con PID: 1
+[INFO] 19:20:37:029 kernel/(372895:372901): Finalice correctamente el PCB con pid: 1
+[INFO] 19:20:38:028 kernel/(372895:372899): Le hice un post al semaforo de que el cpu esta libre
+
+
+SI AL FINAL HACES PROCESO_ESTADO TIENE QUE DAR ASI:
+[INFO] 19:20:47:596 kernel/(372895:372904): Logueando PCBs en NEW
+[INFO] 19:20:47:596 kernel/(372895:372904): Logueando PCBs en READY
+[INFO] 19:20:47:596 kernel/(372895:372904): Logueando PCB en EXEC
+[INFO] 19:20:47:596 kernel/(372895:372904): No hay procesos en exec
+[INFO] 19:20:47:596 kernel/(372895:372904): Logueando PCBs en BLOCKED
+[INFO] 19:20:47:596 kernel/(372895:372904): Logueando PCBs en EXIT
+[INFO] 19:20:47:596 kernel/(372895:372904): PID: 2, PC: 5, QUANTUM: 0
+[INFO] 19:20:47:596 kernel/(372895:372904): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:47:596 kernel/(372895:372904): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:47:596 kernel/(372895:372904): SI: 0, DI: 0, PC: 5
+[INFO] 19:20:47:596 kernel/(372895:372904): PID: 3, PC: 1, QUANTUM: 0
+[INFO] 19:20:47:596 kernel/(372895:372904): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:47:597 kernel/(372895:372904): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:47:597 kernel/(372895:372904): SI: 0, DI: 0, PC: 1
+[INFO] 19:20:47:597 kernel/(372895:372904): PID: 1, PC: 5, QUANTUM: 0
+[INFO] 19:20:47:597 kernel/(372895:372904): AX: 0, BX: 0, CX: 0, DX: 0
+[INFO] 19:20:47:597 kernel/(372895:372904): EAX: 0, EBX: 0, ECX: 0, EDX: 0
+[INFO] 19:20:47:597 kernel/(372895:372904): SI: 0, DI: 0, PC: 5
+
+
+
+
+
+
+
+
+
+
+
+// ----------------------------------------
+// - 3.txt ---------------------------
+// ----------------------------------------
+
+INICIAR_PROCESO manejo_recursos1.txt
+INICIAR_PROCESO manejo_recursos2.txt
+INICIAR_PROCESO manejo_recursos3.txt
+INICIAR_PLANIFICACION
+
+
+
+// ----------------------------------------
+// - CONFIG USADA -------------------------
+// ----------------------------------------
+
+PUERTO_ESCUCHA=8003
+IP_MEMORIA=127.0.0.1
+PUERTO_MEMORIA=8002
+IP_CPU=127.0.0.1
+PUERTO_CPU_DISPATCH=8006
+PUERTO_CPU_INTERRUPT=8007
+ALGORITMO_PLANIFICACION=FIFO
+QUANTUM=100
+RECURSOS=[RA,RB,RC]
+INSTANCIAS_RECURSOS=[1,2,1]
+GRADO_MULTIPROGRAMACION=3
+
+
+// ----------------------------------------
+// - manejo_recursos1.txt ---------------------------
+// ----------------------------------------
+
+WAIT RA
+WAIT RA
+SIGNAL RA
+SIGNAL RB
+WAIT RB
+EXIT
+
+// ----------------------------------------
+// - manejo_recursos2.txt ---------------------------
+// ----------------------------------------
+
+SIGNAL RA
+SIGNAL RA
+WAIT RB
+WAIT RB
+SIGNAL RB
+EXIT
+
+
+// ----------------------------------------
+// - manejo_recursos3.txt ---------------------------
+// ----------------------------------------
+
+SIGNAL NOT_RECURSO
+EXIT
