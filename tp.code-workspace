@@ -1,0 +1,36 @@
+{
+	"settings": {
+		"debug.onTaskErrors": "abort",
+		"files.associations": {
+			"*.h": "c",
+			"limits": "c",
+			"cstddef": "c",
+			"atomic": "c",
+			"*.tcc": "c",
+			"cstdint": "c",
+			"random": "c"
+		},
+		"C_Cpp.errorSquiggles": "disabled",
+	},
+	"folders": [
+		{
+			"path": "kernel"
+		},
+		{
+			"path": "cpu"
+		},
+		{
+			"path": "memoria"
+		},
+		{
+			"path": "entradasalida"
+		},
+		{
+			"path": "utils"
+		}
+	],
+	"launch": {
+		"version": "0.2.0",
+		"configurations": []
+	}
+}
